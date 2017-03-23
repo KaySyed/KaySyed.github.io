@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstraprtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebarhamburger.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="maalemtext">
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <img src="imgs/maalem%20logo.PNG" class="img-responsive center-block"/>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="index.html">الرئيسية</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="2.html">من نحن</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
+            </li>
+            <!--<li class="dropdown">
+                <a class="arBold smallfont" href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a class="arBold smallfont" href="#">Action</a></li>
+                    <li><a class="arBold smallfont" href="#">Another action</a></li>
+                    <li><a class="arBold smallfont" href="#">Something else here</a></li>
+                    <li><a class="arBold smallfont" href="#">Separated link</a></li>
+                    <li><a class="arBold smallfont" href="#">One more separated link</a></li>
+                </ul>
+            </li>-->
+            <li>
+                <a class="arBold smallfont" href="#">تمويل مقدمي الخدمات</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="6.html">الأسئلة المتكررة</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="newsslider.html">أخبار التمويل</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="#">خدمة العملاء</a>
+            </li>
+            <li class="active">
+                <a class="arBold smallfont" href="form.html">نموذج</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div class="navbar navbar-default">
+        <div class="hamburger hamburger--arrowalt" data-toggle="offcanvas">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+        <a href="index.html">
+            <img class="nav-logo" src="imgs/logo-ltr.PNG"/>
+        </a>
+        <div class="langAlignRight"><a href="#">ENGLISH</a></div>
+        <div class="langAlignRight tel"><p>9200 16916</p></div>
+    </div>
+
+
+    <div class="container divrtl">
+
+        <p class="page-heading">نموذج طلب شراء شركات:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">الاسم الشركة:</label>
+                    <input class="form-control" id="name" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">الاسم السجل التجاري:</label>
+                    <input class="form-control" id="regname" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">اسم المدير المفوض:</label>
+                    <input class="form-control" id="managername" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">المدينة:</label>
+                    <input class="form-control" id="country" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">رقم الهاتف:</label>
+                    <input class="form-control" id="telno" type="text">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">تحويلة:</label>
+                    <input class="form-control" id="extension" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">بريد الالكتروني:</label>
+                    <input class="form-control" id="email" type="text">
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">نص الرسالة:</label>
+                    <textarea class="form-control commenttext" id="message"></textarea>
+                </div>
+                <div class="form-group -animated -overlayed">
+                    <label class="arform">رمز التحقيق:</label>
+                    <input class="form-control" id="validationno" type="text">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <button onclick="location.href='5.html'" type="button"
+            class="btn btn-primary btn-lg outline center-block">
+        <strong>تقديم الطلب</strong></button>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+
+<!-- /#wrapper -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+    /**
+     * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+     *
+     * @private
+     * @author Todd Motto
+     * @link https://github.com/toddmotto/foreach
+     * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+     * @callback requestCallback      callback   - Callback function for each iteration.
+     * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+     * @returns {}
+     */
+    var forEach = function (t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))for (var c in t)Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++)o.call(r, t[e], e, t)
+    };
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+        forEach(hamburgers, function (hamburger) {
+            hamburger.addEventListener("click", function () {
+                this.classList.toggle("is-active");
+            }, false);
+        });
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+            isClosed = false;
+
+        trigger.click(function () {
+            hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+            if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+    });
+
+    $(function () {
+
+        $('.form-group.-animated .form-control, .form-group.-overlayed .form-control').keyup(function (event) {
+            if ($(this).val() != '') {
+                $(this).parent('.form-group').addClass('-active');
+            } else {
+                $(this).parent('.form-group').removeClass('-active');
+            }
+        });
+
+        $('.form-group.-animated .form-control, .form-group.-overlayed .form-control').focusin(function (event) {
+            $(this).parent('.form-group').addClass('-focus');
+        });
+
+        $('.form-group.-animated .form-control, .form-group.-overlayed .form-control').focusout(function (event) {
+            $(this).parent('.form-group').removeClass('-focus');
+        });
+
+    })
+</script>
+
+
+</body>
+</html>
