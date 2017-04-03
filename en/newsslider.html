@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>معالم - أخبار التمويل</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstraprtl.css" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--Camera master-->
@@ -24,22 +25,7 @@
     <script type='text/javascript' src='js/camera.min.js'></script>
 
     <script>
-        jQuery(function () {
-            jQuery('#camera_wrap_1').each(function () {
-                var t = jQuery(this);
-                var s = 0;
-                t.camera({
-                    height: '30%',
-                    opacityOnGrid: true,
-                    thumbnails: true,
-                    fx: 'mosaicSpiral',
-                    slideOn: 'next',
-                    rows: 5,
-                    cols: 8,
-                    width: '100%'
-                });
-            });
-        });
+
     </script>
     <!--Close Camera master-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,7 +35,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="maalemtext">
+<div style="position: fixed;">
+    <div class="fullBackground"></div>
+</div>
 <div id="wrapper">
     <div class="overlay"></div>
 
@@ -62,11 +51,14 @@
             <li>
                 <a class="arBold smallfont" href="index.html">الرئيسية</a>
             </li>
-            <li class="active">
+            <li>
                 <a class="arBold smallfont" href="2.html">من نحن</a>
             </li>
             <li>
-                <a class="arBold smallfont" href="#">حاسبة التمويل</a>
+                <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
+            </li>
+            <li>
+                <a class="arBold smallfont" href="4.html">تمويل الافراد</a>
             </li>
             <li>
                 <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
@@ -88,8 +80,8 @@
             <li>
                 <a class="arBold smallfont" href="6.html">الأسئلة المتكررة</a>
             </li>
-            <li>
-                <a class="arBold smallfont" href="#">أخبار التمويل</a>
+            <li class="active">
+                <a class="arBold smallfont" href="newsslider.html">أخبار التمويل</a>
             </li>
             <li>
                 <a class="arBold smallfont" href="#">خدمة العملاء</a>
@@ -102,177 +94,260 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="hamburger hamburger--arrowalt" data-toggle="offcanvas">
-            <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
+    <div class="navbar navbar-default second-nav smallfont">
+        <div class="second-nav-background">
+            <div class="hamburger" data-toggle="offcanvas">
+                <div class="hamburger-box">
+                    <div class="langAlignLeft">
+                        <div class="fa fa-bars fa-3">
+                            <div class="langAlignRight">MENU</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a href="index.html"><img class="nav-logo pull-right" src="imgs/logo-rtl_2.PNG"></a>
+
+            <div class="langAlignRight"><a class="maalemtext" href="../newsslider.html">العربية</a></div>
+            <div class="socialnav">
+                <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
+            <a class="langAlignRightAr langAlignRight" href="#"><p>اعرفنا اكثر</p></a>
+            <a class="langAlignRightAr langAlignRight" href="#"><p>جديد معالم</p></a>
         </div>
-        <div>
-            <a href="index.html">
-                <img class="nav-logo" src="imgs/logo-ltr.PNG"/>
-            </a>
-            <div class="langAlignRight"><a href="#">ENGLISH</a></div>
-            <div class="langAlignRight tel"><p>9200 16916</p></div>
-        </div>
+    </div>
+    <div class="backanimate">
+        <div class="translucentback">
+            <div class="translucentback">
 
-        <div class="container divrtl">
-
-            <!--<div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="imgs/slider/1.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/1.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/2.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/3.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/4.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/5.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/6.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/7.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/8.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/9.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/10.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/11.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-                    <li>
-                        <img src="imgs/slider/12.jpg" />
-                        <p class="flex-caption">Lorem ipsum text here</p>
-                    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-                </ul>
-            </div>-->
-            <div class="fluid_container">
-
-                <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-                    <div data-thumb="imgs/slider/thumbs/1.jpg" data-src="imgs/slider/1.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem ipsum etc
+                <div class="navbar navbar-default ">
+                    <div class="hamburger" data-toggle="offcanvas">
+                        <div class="hamburger-box">
+                            <div class="langAlignLeft">
+                                <div class="fa fa-bars fa-3">
+                                    <div class="langAlignRight">MENU</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div data-thumb="imgs/slider/thumbs/2.jpg" data-src="imgs/slider/2.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
+                    <a href="index.html"><img class="nav-logo pull-right" src="imgs/logo-rtl_2.PNG"></a>
+
+
+                    <div class="langAlignRight"><a class="maalemtext" href="../newsslider.html">العربية</a></div>
+                    <div class="socialnav">
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div data-thumb="imgs/slider/thumbs/3.jpg" data-src="imgs/slider/3.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-                    <div data-thumb="imgs/slider/thumbs/4.jpg" data-src="imgs/slider/4.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-                    <div data-thumb="imgs/slider/thumbs/5.jpg" data-src="imgs/slider/5.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-                    <div data-thumb="imgs/slider/thumbs/6.jpg" data-src="imgs/slider/6.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-                    <div data-thumb="imgs/slider/thumbs/7.jpg" data-src="imgs/slider/7.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-                    <div data-thumb="imgs/slider/thumbs/8.jpg" data-src="imgs/slider/8.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-
-                    <div data-thumb="imgs/slider/thumbs/9.jpg" data-src="imgs/slider/9.jpg">
-                        <div class="camera_caption fadeFromBottom">
-                            Lorem impsum dolor sit
-                        </div>
-                    </div>
-
-                </div><!-- #camera_wrap_1 -->
-
-            </div><!-- .fluid_container -->
-
-
-        </div>
-
-        <div class="container divrtl">
-            <div class="news">
-                <p class="xl-large maalemtext">أخبار التمويل</p>
-
-                <div class="newsitem"><img class="newsitemimage" src="imgs/background_3_subitem_vectorized.png"/>
-                    <p class="maalemtext">
-
-                        أصدرت مؤسسة النقد العرتي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو أكثر
-                        من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح لوكالة
-                        الابناء السعودية واس ان التراخيص ال
-                        <button onclick="location.href='2.html'" type="button"
-                                class="btn btn-primary btn-lg outline center-block">المزيد
-                        </button>
-                    </p>
-
+                    <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
+                    <a class="langAlignRight maalemtext" href="#"><p>اعرفنا اكثر</p></a>
+                    <a class="langAlignRight maalemtext" href="#"><p>جديد معالم</p></a>
                 </div>
 
-                <div class="newsitem"><img class="newsitemimage" src="imgs/background_3_subitem_vectorized.png"/>
-                    <p class="maalemtext">
 
-                        أصدرت مؤسسة النقد العرتي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو أكثر
-                        من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح لوكالة
-                        الابناء السعودية واس ان التراخيص ال
-                        <button onclick="location.href='2.html'" type="button"
-                                class="btn btn-primary btn-lg outline center-block">المزيد
-                        </button>
-                    </p>
+                <div class="container divrtl">
+                    <div class="fluid_container">
 
+                        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                            <div data-thumb="imgs/slider/thumbs/1.jpg" data-src="imgs/slider/1.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem ipsum etc
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/2.jpg" data-src="imgs/slider/2.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/3.jpg" data-src="imgs/slider/3.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/4.jpg" data-src="imgs/slider/4.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/5.jpg" data-src="imgs/slider/5.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/6.jpg" data-src="imgs/slider/6.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/7.jpg" data-src="imgs/slider/7.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/8.jpg" data-src="imgs/slider/8.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+
+                            <div data-thumb="imgs/slider/thumbs/9.jpg" data-src="imgs/slider/9.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+
+                        </div><!-- #camera_wrap_1 -->
+
+                    </div>
                 </div>
 
+                <div class="container divrtl">
+                    <div class="news">
+                        <p class="xl-large maalemtext">أخبار التمويل</p>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem newsxl"><img class="newsitemimage"
+                                                          src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="medium">
+                                مؤسسة النقد العربي السعودي
+                            </p>
+                            <p>
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة
+
+                                واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح لوكالة
+                                الابناء السعودية واس ان التراخيص التي أصدرتها المؤسسة ضملت الترخيص لشركة أوركس السودية
+                                للتأجير التمويلي بممارسة نشاط الايجار التمويلي، والترخيص لمجموعة سامبا المالية بممارسة
+                                نشاط التمويل العقاري، والترخيص للبنك الأهلي التجاري بممارسة
+
+                                الابناء السعودية واس ان التراخيص التي أصدرتها المؤسسة ضملت الترخيص لشركة أوركس السودية
+                                للتأجير التمويلي بممارسة نشاط الايجار التمويلي، والترخيص لمجموعة سامبا المالية بممارسة
+                                نشاط التمويل العقاري، والترخيص للبنك الأهلي التجاري بممارسة
+
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العربي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block">اقرأ المزيد
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div class="text-center">
+                            <img src="imgs/more.png" class="center-block img-responsive">
+                            <p>المزيد</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -282,12 +357,29 @@
 </div>
 
 <!-- /#wrapper -->
+<footer class="footer">
+    <div class="socialfooter">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a>9200 16916</a>
+    </div>
+    <p>info@maalem.com.sa | 9200 16916</p>
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved</p>
+
+</footer>
+
+<!-- /#wrapper -->
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
 
-<script defer src="js/jquery.flexslider.js"></script>
+
 <script>
     /**
      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
@@ -314,20 +406,6 @@
     }
 </script>
 
-<script type="text/javascript">
-    $(function () {
-        SyntaxHighlighter.all();
-    });
-    $(window).load(function () {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            start: function (slider) {
-                $('body').removeClass('loading');
-            }
-        });
-    });
-</script>
-
 <script>
     $(document).ready(function () {
         var trigger = $('.hamburger'),
@@ -335,6 +413,9 @@
             isClosed = false;
 
         trigger.click(function () {
+            hamburger_cross();
+        });
+        overlay.click(function () {
             hamburger_cross();
         });
 
@@ -356,16 +437,42 @@
         $('[data-toggle="offcanvas"]').click(function () {
             $('#wrapper').toggleClass('toggled');
         });
+        $('.overlay').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+
+
+        $(".fullBackground").bgswitcher({
+            images: ["backsliderimgs/001.jpg",
+                "backsliderimgs/002.jpg",
+                "backsliderimgs/003.jpg",
+                "backsliderimgs/004.jpg",
+                "backsliderimgs/005.jpg",
+                "backsliderimgs/006.jpg",
+                "backsliderimgs/007.jpg"], // Background images
+            effect: "fade", // fade, blind, clip, slide, drop, hide
+            interval: 10000, // Interval of switching
+            loop: true, // Loop the switching
+            shuffle: false, // Shuffle the order of an images
+            duration: 5000, // Effect duration
+            easing: "swing" // Effect easing
+        });
     });
+
+</script>
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > $('.navbar-default:visible').height() - 5) {
+                    $('.second-nav').fadeIn(500);
+                } else {
+                    $('.second-nav').fadeOut(500);
+                }
+            });
+        });
+    })(jQuery);
 </script>
 
-<!-- Syntax Highlighter -->
-<script type="text/javascript" src="js/shCore.js"></script>
-<script type="text/javascript" src="js/shBrushXml.js"></script>
-<script type="text/javascript" src="js/shBrushJScript.js"></script>
-
-<!-- Optional FlexSlider Additions -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
 </body>
 </html>

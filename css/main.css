@@ -6,8 +6,20 @@ body {
 body,
 html {
     height: 100%;
-    background-color: #fff;
-    background-image: url(../imgs/background_2_subitem_1.png);
+
+    /*
+    background: #eee;
+    */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: contain;
+    /*
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(../imgs/Maalem-Financing-website.png);
+    */
+
+    /*background-color: #fff;
+    background-image: url(../imgs/background_2_subitem_1.png);*/
     /*
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.4) 100%), url(../imgs/background_2_subitem_1.png);
     */
@@ -145,14 +157,19 @@ arH2 {
     background-size: contain;
 }
 
+.btn-primary.outline.white {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-aboutus {
+    width: 100%;
+}
+
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #009395;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+
     -webkit-box-shadow: inset 10px 10px 118px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 10px 10px 118px -16px rgba(0, 0, 0, 0.75);
     box-shadow: inset 10px 10px 118px -16px rgba(0, 0, 0, 0.75);
@@ -210,7 +227,7 @@ p, a {
     color: #262732;
     background-color: rgba(0, 0, 0, 0.08);
     background-image: none;
-    border: 1px solid #005f61 !important;
+    border: 1px solid #fff !important;
     border-radius: 3px;
     -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -288,7 +305,7 @@ label {
     top: 0;
     z-index: 0;
     margin-bottom: 0;
-    color: #005f61;
+    color: #fff;
     -webkit-transform: translateY(45.5px);
     -moz-transform: translateY(45.5px);
     -ms-transform: translateY(45.5px);
@@ -728,9 +745,9 @@ p {
     position: relative;
     text-align: right !important;
     background: rgba(36, 118, 137, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-bottom: 10px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -742,6 +759,19 @@ p {
     transition: all 0.3s;
     cursor: pointer;
     left: 0;
+    min-height: 100px;
+    line-height: 1.5;
+    height: 100%;
+}
+
+.newsitem.newsxl .title{
+    font-weight: bold;
+}
+
+.newsitem.newsxl .newsitemimage {
+    height: 150px;
+    width:150px;
+    margin: 8px;
 }
 
 .newsitem:nth-of-type(2n+1) {
@@ -762,10 +792,6 @@ p {
     background: -ms-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     background: linear-gradient(to right, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#299355', endColorstr='#247689', GradientType=1);
-}
-
-.moreitem .row .imagetextdiv {
-    border: none;
 }
 
 .moreitem .row .box-logo {
@@ -810,7 +836,8 @@ p {
     padding: 5px;
     width: 100px;
     background: #fff;
-    border: 1px rgba(41, 147, 85, 1) solid;
+    border: 8px #005f61 solid;
+    margin-left:10px;
 }
 
 .moreitem {
@@ -911,23 +938,63 @@ p {
 
 .translucentback {
     background: rgba(0, 0, 0, 0.20);
+    flex: 1;
+    position: relative;
 }
 
 .paddingbottom {
     padding-bottom: 35px;
 }
 
+.textcenter.paddingbottom {
+    position: absolute;
+    bottom: 0;
+}
+
 .home {
+    /*
     background-image: url(../imgs/background_2_subitem_1.png) !important;
+    */
 }
 
 .backanimate p, .backanimate a {
-    color: #fff !important;
+    color: #fff;
 }
 
 .backanimate {
     color: #fff;
+    margin: 0;
 }
+
+.home .backanimate, .home .translucentback{
+    height:100vh;
+}
+
+.internal-heading{
+    background: rgba(41,142,97,1);
+    background: -moz-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,142,97,1)), color-stop(100%, rgba(42,113,146,1)));
+    background: -webkit-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
+    background: -o-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
+    background: -ms-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
+    background: linear-gradient(to right, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#298e61', endColorstr='#2a7192', GradientType=1 );
+    padding:10px;
+    color: #fff;
+}
+/*
+.internal-heading:nth-child(even){
+    background: rgba(42,113,146,1);
+    background: -moz-linear-gradient(left, rgba(42,113,146,1) 0%, rgba(41,142,97,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42,113,146,1)), color-stop(100%, rgba(41,142,97,1)));
+    background: -webkit-linear-gradient(left, rgba(42,113,146,1) 0%, rgba(41,142,97,1) 100%);
+    background: -o-linear-gradient(left, rgba(42,113,146,1) 0%, rgba(41,142,97,1) 100%);
+    background: -ms-linear-gradient(left, rgba(42,113,146,1) 0%, rgba(41,142,97,1) 100%);
+    background: linear-gradient(to right, rgba(42,113,146,1) 0%, rgba(41,142,97,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a7192', endColorstr='#298e61', GradientType=1 );
+    padding:10px;
+    color: #fff;
+}*/
 
 .container.translucentback {
     background: rgba(0, 0, 0, 0.5);
@@ -948,6 +1015,19 @@ p {
 
 .fa-twitter:hover {
     color: #0084b4;
+}
+
+.fullBackground {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .second-nav {
@@ -978,6 +1058,8 @@ p {
     text-align: center;
     color: #fff !important;
     padding: 10px 0px;
+    position: relative;
+    width: 100%;
 }
 
 .footer p {
@@ -991,6 +1073,18 @@ p {
     min-height: 100px;
     max-height: 100px;
     overflow: hidden;
+}
+
+.padding-left-right50 {
+    padding: 0 50px;
+}
+
+.large-aboutus {
+    font-size: 40px;
+}
+
+.partnerlogo {
+    border: 1px solid;
 }
 
 .absolute-center {
@@ -1014,7 +1108,127 @@ p {
     display: box;
     box-pack: center;
     box-align: center;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.aboutus-row {
+}
+
+.requestform {
+    background: rgba(40, 132, 115, 1);
+    background-image: url('../imgs/saudimaalem.png');
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white ;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    padding: 0 15px;
+}
+
+.requestrow{
+    margin:40px 0;
+}
+
+.requestrow p{
+    color: #005f61;;
+}
+
+.requestrow div .partnerlogo{
+    height:100px;
+    line-height: 1;
+    padding:0 15px;
+}
+
+.requestcalc {
+    background: rgba(40, 132, 115, 1);
+    background-image: url('../imgs/saudimaalem.png');
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white ;
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    padding: 0 15px; white
+}
+
+.aboutus-item-header1 {
+    background: rgba(40, 132, 115, 1);
+    background-image: url('../imgs/saudimaalem.png');
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -moz-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-gradient(left top, right top, color-stop(0 %, rgba(40, 132, 115, 1)), color-stop(100 %, rgba(38, 124, 128, 1)));
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -o-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -ms-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, linear-gradient(to right, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#288473', endColorstr='#267c80', GradientType=1);
+    padding: 0 15px;
+    margin: 30px  0;
+}
+
+.aboutus-item-header2 {
+    background: rgba(42, 141, 100, 1);
+    background-image: url(../imgs/dart.png) 16px / 30% no-repeat;
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);
+-moz-linear-gradient(left, rgba(42, 141, 100, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, -webkit-gradient(left top, right top, color-stop(0%, rgba(42, 141, 100, 1)), color-stop(100%, rgba(38, 124, 128, 1)));
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/dart.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
+    padding: 0 15px;
+    margin: 30px  0;
+}
+
+.aboutus-item-header3 {
+    background: rgba(40, 132, 115, 1);
+    background-image: url('../imgs/saudimaalem.png');
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -moz-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-gradient(left top, right top, color-stop(0 %, rgba(40, 132, 115, 1)), color-stop(100 %, rgba(38, 124, 128, 1)));
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -o-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -ms-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, linear-gradient(to right, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#288473', endColorstr='#267c80', GradientType=1);
+    padding: 0 15px;
+    margin: 30px  0;
+}
+
+.aboutus-item-header4 {
+    background: rgba(42, 141, 100, 1);
+    background-image: url(../imgs/message.png) 16px / 30% no-repeat;
+    background: url(../imgs/message.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);
+-moz-linear-gradient(left, rgba(42, 141, 100, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/message.png) 16px / 30% no-repeat, -webkit-gradient(left top, right top, color-stop(0%, rgba(42, 141, 100, 1)), color-stop(100%, rgba(38, 124, 128, 1)));
+    background: url(../imgs/message.png) 16px / 30% no-repeat, -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/message.png) 16px / 30% no-repeat, -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/message.png) 16px / 30% no-repeat, -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: url(../imgs/message.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
+    padding: 0 15px;
+    margin: 30px  0;
+}
+
+.aboutus-text{
+    min-height:220px
+}
+.aboutus-text-less{
+    min-height:100px
+}
+
+.aboutus-item-header1 p, .aboutus-item-header2 p , .aboutus-item-header3 p, .aboutus-item-header4 p {
+    color: #fff;
+}
+
+.imagetextdiv2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    padding: 0px 30px 0 30px;
 }
 
 .socialfooter {
@@ -1245,6 +1459,10 @@ p {
 @media screen and (max-width: 990px) {
     .calcres, .calcresbtn {
         font-size: 40px;
+    }
+
+    .home .backanimate, .home .translucentback{
+        height:auto;
     }
 
     .page-heading {

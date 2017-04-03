@@ -24,22 +24,7 @@
     <script type='text/javascript' src='js/camera.min.js'></script>
 
     <script>
-        jQuery(function () {
-            jQuery('#camera_wrap_1').each(function () {
-                var t = jQuery(this);
-                var s = 0;
-                t.camera({
-                    height: '30%',
-                    opacityOnGrid: true,
-                    thumbnails: true,
-                    fx: 'mosaicSpiral',
-                    slideOn: 'next',
-                    rows: 5,
-                    cols: 8,
-                    width: '100%'
-                });
-            });
-        });
+
     </script>
     <!--Close Camera master-->
 
@@ -52,6 +37,9 @@
     <![endif]-->
 </head>
 <body class="maalemtext">
+<div style="position: fixed;">
+    <div class="fullBackground"></div>
+</div>
 <div id="wrapper">
     <div class="overlay"></div>
 
@@ -64,7 +52,7 @@
             <li>
                 <a class="arBold smallfont" href="index.html">الرئيسية</a>
             </li>
-            <li >
+            <li>
                 <a class="arBold smallfont" href="2.html">من نحن</a>
             </li>
             <li>
@@ -118,9 +106,9 @@
                     </div>
                 </div>
             </div>
-            <a href="maalem/checkpoint1/2.html"><img class="nav-logo pull-right" src="imgs/logo-rtl_2.PNG"></a>
+            <a href="index.html"><img class="nav-logo pull-right" src="imgs/logo-rtl_2.PNG"></a>
 
-            <div class="langAlignRight"><a href="#">ENGLISH</a></div>
+            <div class="langAlignRight"><a href="en/form.html">ENGLISH</a></div>
             <div class="socialnav">
                 <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
@@ -136,143 +124,147 @@
             <a class="langAlignRightAr langAlignRight" href="#"><p>جديد معالم</p></a>
         </div>
     </div>
-    <div class="navbar navbar-default ">
-        <div class="hamburger" data-toggle="offcanvas">
-            <div class="hamburger-box">
-                <div class="langAlignLeft">
-                    <div class="fa fa-bars fa-3">
-                        <div class="langAlignRight">MENU</div>
+
+    <div class="backanimate">
+        <div class="translucentback">
+            <div class="translucentback">
+                <div class="navbar navbar-default ">
+                    <div class="hamburger" data-toggle="offcanvas">
+                        <div class="hamburger-box">
+                            <div class="langAlignLeft">
+                                <div class="fa fa-bars fa-3">
+                                    <div class="langAlignRight">MENU</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <a href="index.html"><img class="nav-logo pull-right" src="imgs/logo-rtl_2.PNG"></a>
+
+
+                    <div class="langAlignRight"><a href="en/form.html">ENGLISH</a></div>
+                    <div class="socialnav">
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
+                    <a class="langAlignRight maalemtext" href="#"><p>اعرفنا اكثر</p></a>
+                    <a class="langAlignRight maalemtext" href="#"><p>جديد معالم</p></a>
+                </div>
+                <div class="container divrtl">
+                    <div class="fluid_container">
+
+                        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                            <div data-thumb="imgs/slider/thumbs/1.jpg" data-src="imgs/slider/1.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem ipsum etc
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/2.jpg" data-src="imgs/slider/2.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/3.jpg" data-src="imgs/slider/3.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/4.jpg" data-src="imgs/slider/4.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/5.jpg" data-src="imgs/slider/5.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/6.jpg" data-src="imgs/slider/6.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/7.jpg" data-src="imgs/slider/7.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+                            <div data-thumb="imgs/slider/thumbs/8.jpg" data-src="imgs/slider/8.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+
+                            <div data-thumb="imgs/slider/thumbs/9.jpg" data-src="imgs/slider/9.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    Lorem impsum dolor sit
+                                </div>
+                            </div>
+
+                        </div><!-- #camera_wrap_1 -->
+
+                    </div>
+                </div>
+
+                <div class="container divrtl paddingbottom">
+
+                    <p class="page-heading">نموذج طلب شراء شركات:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">الاسم الشركة:</label>
+                                <input class="form-control" id="name" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">الاسم السجل التجاري:</label>
+                                <input class="form-control" id="regname" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">اسم المدير المفوض:</label>
+                                <input class="form-control" id="managername" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">المدينة:</label>
+                                <input class="form-control" id="country" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">رقم الهاتف:</label>
+                                <input class="form-control" id="telno" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">تحويلة:</label>
+                                <input class="form-control" id="extension" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">بريد الالكتروني:</label>
+                                <input class="form-control" id="email" type="text">
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">نص الرسالة:</label>
+                                <textarea class="form-control commenttext" id="message"></textarea>
+                            </div>
+                            <div class="form-group -animated -overlayed">
+                                <label class="arform">رمز التحقيق:</label>
+                                <input class="form-control" id="validationno" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                            class="btn btn-primary btn-lg outline white center-block">
+                        <strong>تقديم الطلب</strong></button>
                 </div>
             </div>
         </div>
-        <a href="index.html"><img class="nav-logo pull-right" src="imgs/logo-rtl.PNG"></a>
-
-
-        <div class="langAlignRight"><a href="#">ENGLISH</a></div>
-        <div class="socialnav">
-            <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-            <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </div>
-            <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
-        <a class="langAlignRight maalemtext" href="#"><p>اعرفنا اكثر</p></a>
-        <a class="langAlignRight maalemtext" href="#"><p>جديد معالم</p></a>
     </div>
-    <div class="container divrtl">
-        <div class="fluid_container">
-
-            <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-                <div data-thumb="imgs/slider/thumbs/1.jpg" data-src="imgs/slider/1.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem ipsum etc
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/2.jpg" data-src="imgs/slider/2.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/3.jpg" data-src="imgs/slider/3.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/4.jpg" data-src="imgs/slider/4.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/5.jpg" data-src="imgs/slider/5.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/6.jpg" data-src="imgs/slider/6.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/7.jpg" data-src="imgs/slider/7.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-                <div data-thumb="imgs/slider/thumbs/8.jpg" data-src="imgs/slider/8.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-
-                <div data-thumb="imgs/slider/thumbs/9.jpg" data-src="imgs/slider/9.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        Lorem impsum dolor sit
-                    </div>
-                </div>
-
-            </div><!-- #camera_wrap_1 -->
-
-        </div>
-    </div>
-
-
-    <div class="container divrtl paddingbottom">
-
-        <p class="page-heading">نموذج طلب شراء شركات:</p>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">الاسم الشركة:</label>
-                    <input class="form-control" id="name" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">الاسم السجل التجاري:</label>
-                    <input class="form-control" id="regname" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">اسم المدير المفوض:</label>
-                    <input class="form-control" id="managername" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">المدينة:</label>
-                    <input class="form-control" id="country" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">رقم الهاتف:</label>
-                    <input class="form-control" id="telno" type="text">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">تحويلة:</label>
-                    <input class="form-control" id="extension" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">بريد الالكتروني:</label>
-                    <input class="form-control" id="email" type="text">
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">نص الرسالة:</label>
-                    <textarea class="form-control commenttext" id="message"></textarea>
-                </div>
-                <div class="form-group -animated -overlayed">
-                    <label class="arform">رمز التحقيق:</label>
-                    <input class="form-control" id="validationno" type="text">
-                </div>
-            </div>
-        </div>
-
-        <button onclick="location.href='5.html'" type="button"
-                class="btn btn-primary btn-lg outline center-block">
-            <strong>تقديم الطلب</strong></button>
-    </div>
-
-</div>
 </div>
 <!-- /#page-content-wrapper -->
 
@@ -297,6 +289,7 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
 
 
 <script>
@@ -354,7 +347,21 @@
             $('#wrapper').toggleClass('toggled');
         });
     });
-
+    $(".fullBackground").bgswitcher({
+        images: ["backsliderimgs/001.jpg",
+            "backsliderimgs/002.jpg",
+            "backsliderimgs/003.jpg",
+            "backsliderimgs/004.jpg",
+            "backsliderimgs/005.jpg",
+            "backsliderimgs/006.jpg",
+            "backsliderimgs/007.jpg"], // Background images
+        effect: "fade", // fade, blind, clip, slide, drop, hide
+        interval: 10000, // Interval of switching
+        loop: true, // Loop the switching
+        shuffle: false, // Shuffle the order of an images
+        duration: 5000, // Effect duration
+        easing: "swing" // Effect easing
+    });
     $(function () {
 
         $('.form-group.-animated .form-control, .form-group.-overlayed .form-control').keyup(function (event) {
