@@ -177,6 +177,7 @@
     margin-right: 15px;
     background: transparent;
     border: none;
+    right:75px;
 }
 .hamburger:hover,
 .hamburger:focus,

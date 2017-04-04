@@ -71,8 +71,8 @@ html {
     font-family: abadi_mt_condensed_lightRg;
     position: relative;
     display: inline-block;
-    margin-left: 15px;
-    float: left !important;
+    margin-right: 15px;
+    float: right !important;
 }
 
 .langAlignRightAr {
@@ -96,7 +96,7 @@ html {
     position: relative;
     display: inline-block;
     margin-left: 15px;
-    float: right !important;
+    float: left !important;
 }
 
 .tel {
@@ -880,7 +880,7 @@ p {
 .nav-logo {
     height: 75px;
     display: inline-block;
-    margin-right: 110px;
+    margin-left: 110px;
 }
 
 .fluid_container {
@@ -1041,7 +1041,7 @@ p {
     background-image: url(../imgs/background_3_subitem.png), -ms-linear-gradient(right, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     background-image: url(../imgs/background_3_subitem.png), linear-gradient(to left, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22768b', endColorstr='#2b8b67', GradientType=1);
-    z-index: 1;
+    z-index: 9999;
     color: #fff !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1235,7 +1235,7 @@ p {
     display: none;
 }
 
-.second-nav.smallfont {
+.second-nav.smallfont, .navbar-default.smallfont {
     font-size: 21px !important;
 }
 
@@ -1254,7 +1254,6 @@ p {
 
     .nav-logo {
         height: 70px;
-        margin-right: 50px;
     }
 
     .tel {
@@ -1414,6 +1413,7 @@ p {
         width: 35px;
     }
 }
+
 @media screen and (max-width: 600px ) {
     .maalemtext {
         font-size: 17px;
@@ -1599,3 +1599,11 @@ p {
         font-size: 17px !important;
     }
 }
+
+@media screen and (max-width: 800px ){
+
+    .xsremove{
+        display: none;
+    }
+}
+

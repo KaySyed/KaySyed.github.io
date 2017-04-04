@@ -71,15 +71,15 @@ html {
     font-family: abadi_mt_condensed_lightRg;
     position: relative;
     display: inline-block;
-    margin-right: 15px;
-    float: right !important;
+    margin-left: 15px;
+    float: left !important;
 }
 
 .langAlignRightAr {
     font-family: ge_flowregular;
     position: relative;
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 15px;
     float: right !important;
 }
 
@@ -880,7 +880,7 @@ p {
 .nav-logo {
     height: 75px;
     display: inline-block;
-    margin-left: 110px;
+    margin-right: 110px;
 }
 
 .fluid_container {
@@ -996,9 +996,8 @@ p {
     color: #fff;
 }*/
 
-.container.translucentback {
-    background: rgba(0, 0, 0, 0.5);
-    padding-top: 15px;
+.intro-section .translucentback .container{
+    padding-top:15px;
 }
 
 .fa-linkedin:hover {
@@ -1041,7 +1040,7 @@ p {
     background-image: url(../imgs/background_3_subitem.png), -ms-linear-gradient(left, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     background-image: url(../imgs/background_3_subitem.png), linear-gradient(to right, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22768b', endColorstr='#2b8b67', GradientType=1);
-    z-index: 1;
+    z-index: 9999;
     color: #fff !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1254,7 +1253,7 @@ p {
 
     .nav-logo {
         height: 70px;
-        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .tel {
@@ -1271,6 +1270,7 @@ p {
 
     .hamburger {
         top: 20px !important;
+        right:35px !important;
     }
 
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -1415,6 +1415,9 @@ p {
     .maalemtext {
         font-size: 17px;
     }
+    .hamburger{
+        /*right:35px !important;*/
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1496,5 +1499,11 @@ p {
 
     .second-nav.smallfont {
         font-size: 17px !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .xsremove{
+        display: none;
     }
 }
