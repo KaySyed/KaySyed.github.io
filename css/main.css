@@ -678,6 +678,7 @@ label {
 }
 
 .imagetextdiv {
+    cursor: pointer;
     margin-left: 30px;
     margin-right: 30px;
     border: 1px solid #fff;
@@ -687,6 +688,10 @@ label {
     -ms-transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
+}
+
+.more-link{
+    cursor: pointer;
 }
 
 .imagetextdiv:hover {
