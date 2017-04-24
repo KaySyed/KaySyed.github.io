@@ -25,7 +25,16 @@
     margin-left: -250px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: rgba(0, 23, 56, 0.73);
+    /*background: rgba(0, 23, 56, 0.73);*/
+    background: rgba(42,113,133,0.73);
+    background: -moz-linear-gradient(-45deg, rgba(42,113,133,0.9) 0%, rgba(51,143,91,0.9) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(42,113,133,0.9)), color-stop(100%, rgba(51,143,91,0.9)));
+    background: -webkit-linear-gradient(-45deg, rgba(42,113,133,0.9) 0%, rgba(51,143,91,0.9) 100%);
+    background: -o-linear-gradient(-45deg, rgba(42,113,133,0.9) 0%, rgba(51,143,91,0.9) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(42,113,133,0.9) 0%, rgba(51,143,91,0.9) 100%);
+    background: linear-gradient(135deg, rgba(42,113,133,0.9) 0%, rgba(51,143,91,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a7185', endColorstr='#338f5b', GradientType=1 );
+
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -77,7 +86,7 @@
     right: 0;
     z-index: -1;
     height: 100%;
-    width: 3px;
+    width: 0px;
     background-color: #1c1c1c;
     -webkit-transition: width .2s ease-in;
     -moz-transition:  width .2s ease-in;
@@ -89,7 +98,10 @@
     color: #fff;
     background-color: #1a1a1a;
 }
-.sidebar-nav li:nth-child(2):before {
+.sidebar-nav li:before {
+    background-color: #005f61;
+}
+/*.sidebar-nav li:nth-child(2):before {
     background-color: #ec1b5a;
 }
 .sidebar-nav li:nth-child(3):before {
@@ -116,6 +128,7 @@
 .sidebar-nav li:nth-child(10):before {
     background-color: #ee6b60;
 }
+*/
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
     width: 100%;

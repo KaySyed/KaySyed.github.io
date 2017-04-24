@@ -14,6 +14,7 @@ html {
     background-attachment: fixed;
     background-position: left;
     background-size: contain;
+    background-image: url(../imgs/Maalem-Financing-website.png);
     /*
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(../imgs/Maalem-Financing-website.png);
     */
@@ -83,12 +84,21 @@ html {
     float: right !important;
 }
 
+
+.langAlignRightAr2 {
+    font-family: ge_flowregular;
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    float: left !important;
+}
+
 .hamburger-box .langAlignLeft {
     line-height: 1;
 }
 
 .hamburger-box .fa {
-    width: 80px;
+    width: 100px;
 }
 
 .langAlignLeft {
@@ -106,7 +116,7 @@ html {
 .maalemtext {
     font-size: 21px;
     font-family: ge_flowregular;
-    color: #005f61;
+    color: #fff;
 }
 
 .arform {
@@ -147,8 +157,9 @@ arH2 {
 }
 
 .btn-primary.outline {
-    border: 1px solid #005f61;
-    color: #005f61;
+    /*border: 1px solid #005f61;color: #005f61;*/
+    border: 1px solid #fff;
+    color: #fff;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
@@ -195,7 +206,7 @@ arH2 {
 }
 
 p, a {
-    color: #005f61;
+    /*color: #005f61;*/
 }
 
 .btn {
@@ -510,6 +521,10 @@ label {
 
 }
 
+.img-responsive.center-block{
+    padding:15px;
+}
+
 .holider-height {
     display: table;
     height: 85px;
@@ -657,15 +672,16 @@ label {
 }
 
 .more {
-    height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    background: transparent;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
     background-size: contain;
+    /*
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(../imgs/Maalem-Financing-website.png);
+    */
 }
 
 .large {
@@ -749,7 +765,7 @@ p {
 .newsitem {
     position: relative;
     text-align: right !important;
-    background: rgba(36, 118, 137, 1);
+    /*background: rgba(36, 118, 137, 1);*/
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -780,23 +796,23 @@ p {
 }
 
 .newsitem:nth-of-type(2n+1) {
-    background: -moz-linear-gradient(left, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
+    /*background: -moz-linear-gradient(left, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(36, 118, 137, 1)), color-stop(100%, rgba(41, 147, 85, 1)));
     background: -webkit-linear-gradient(left, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
     background: -o-linear-gradient(left, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
     background: -ms-linear-gradient(left, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
     background: linear-gradient(to right, rgba(36, 118, 137, 1) 0%, rgba(41, 147, 85, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#247689', endColorstr='#299355', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#247689', endColorstr='#299355', GradientType=1);*/
 }
 
 .newsitem:nth-of-type(2n) {
-    background: -moz-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
+    /*background: -moz-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41, 147, 85, 1)), color-stop(100%, rgba(36, 118, 137, 1)));
     background: -webkit-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     background: -o-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     background: -ms-linear-gradient(left, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
     background: linear-gradient(to right, rgba(41, 147, 85, 1) 0%, rgba(36, 118, 137, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#299355', endColorstr='#247689', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#299355', endColorstr='#247689', GradientType=1);*/
 }
 
 .moreitem .row .box-logo {
@@ -859,27 +875,31 @@ p {
 }
 
 .moreitem:nth-of-type(2n+1) {
-    border-bottom: 2px rgba(36, 118, 137, 1) solid;
+    /*border-bottom: 2px rgba(36, 118, 137, 1) solid;
     padding: 10px;
     border-bottom: 1px solid transparent;
     -moz-border-image: -moz-linear-gradient(left, #184657 0%, #35c577 100%);
     -webkit-border-image: -webkit-linear-gradient(left, #184657 0%, #35c577 100%);
     border-image: linear-gradient(to right, #184657 0%, #35c577 100%);
-    border-image-slice: 1;
+    border-image-slice: 1;*/
+    border-bottom:1px solid #fff;
 }
 
 .moreitem:nth-of-type(2n) {
 
-    -moz-border-image: -moz-linear-gradient(left, #35c577 0%, #184657 100%);
+    /*-moz-border-image: -moz-linear-gradient(left, #35c577 0%, #184657 100%);
     -webkit-border-image: -webkit-linear-gradient(left, #35c577 0%, #184657 100%);
     border-image: linear-gradient(to right, #35c577 0%, #184657 100%);
-    border-image-slice: 1;
+    border-image-slice: 1;*/
+    border-bottom:1px solid #fff;
+
 }
 
 .moreitem:last-child {
-    -moz-border-image: none;
+    /*-moz-border-image: none;
     -webkit-border-image: none;
-    border-image: none;
+    border-image: none;*/
+    border-bottom:none;
 }
 
 .nav-logo {
@@ -945,6 +965,13 @@ p {
     background: rgba(0, 0, 0, 0.20);
     flex: 1;
     position: relative;
+    min-height:91vh;
+}
+
+.translucentback2 {
+    background: rgba(0, 0, 0, 0.40);
+    flex: 1;
+    position: relative;
 }
 
 .paddingbottom {
@@ -957,10 +984,7 @@ p {
 }
 
 .home {
-    /*
-    background-image: url(../imgs/background_2_subitem_1.png) !important;
-    */
-}
+    background-image: url(../imgs/Maalem-Financing-website.png) !important;}
 
 .backanimate p, .backanimate a {
     color: #fff;
@@ -969,6 +993,7 @@ p {
 .backanimate {
     color: #fff;
     margin: 0;
+    min-height:91vh;
 }
 
 .home .backanimate, .home .translucentback{
@@ -1002,7 +1027,7 @@ p {
 }*/
 
 .intro-section .translucentback .container{
-    padding-top:15px;
+    padding-top:10px;
 }
 
 .fa-linkedin:hover {
@@ -1045,7 +1070,7 @@ p {
     background-image: url(../imgs/background_3_subitem.png), -ms-linear-gradient(left, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     background-image: url(../imgs/background_3_subitem.png), linear-gradient(to right, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22768b', endColorstr='#2b8b67', GradientType=1);
-    z-index: 9999;
+    z-index: 999;
     color: #fff !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1062,17 +1087,19 @@ p {
     text-align: center;
     color: #fff !important;
     padding: 10px 0px;
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
-.footer p {
+.footer p, .footer a {
     font-family: abadi_mt_condensed_lightRg;
     font-size: 15px;
     color: #fff !important;
     margin: 0;
 }
-
+.contact-us p, .contact-us a{
+    display: inline-block;
+}
 .smallfont.alignmargin {
     min-height: 100px;
     max-height: 100px;
@@ -1088,7 +1115,10 @@ p {
 }
 
 .partnerlogo {
+    /*
     border: 1px solid;
+    */
+    background: rgba(255, 255, 255, 0.54);
 }
 
 .absolute-center {
@@ -1250,6 +1280,9 @@ p {
 @media screen and (max-width: 480px) {
     .navbar-default {
         margin-bottom: 0 !important;
+    }
+    .langAlignRightAr2{
+        display: none;
     }
 
     .langAlignRight {
@@ -1456,6 +1489,9 @@ p {
     .calcres, .calcresbtn {
         font-size: 48px;
     }
+    .imagetextdiv.text-center.partnerlogo{
+        margin-top:10px !important;
+    }
 }
 
 @media screen and  (max-width: 320px) {
@@ -1478,7 +1514,7 @@ p {
     }
 
     .borderWhite {
-        margin: 3% 23%;
+        margin: 3% 22%;
     }
 
     .moreitem:hover {

@@ -19,18 +19,38 @@
     <style>
         .backanimate {
             overflow: hidden;
-            background-image: url(backsliderimgs/1.png);
+/*
+            background-image: url(imgs/Maalem-Financing-website.png);
+*/
             -webkit-transition: background-image 3s ease-in-out;
             -moz-transition: background-image 3s ease-in-out;
             -o-transition: background-image 3s ease-in-out;
             -ms-transition: background-image 3s ease-in-out;
             transition: background-image 3s ease-in-out;
-            background-size: cover !important;
+            background-size: contain !important;
             background-repeat: no-repeat !important;
-            background-position: center center !important;
+            background-position: left center !important;
+
+        }
+
+        .backanimate2 {
+            overflow: hidden;
+            background-image: url(imgs/Maalem-Financing-website.png);
+            -webkit-transition: background-image 3s ease-in-out;
+            -moz-transition: background-image 3s ease-in-out;
+            -o-transition: background-image 3s ease-in-out;
+            -ms-transition: background-image 3s ease-in-out;
+            transition: background-image 3s ease-in-out;
+            /* background-size: cover !important; */
+            background-repeat: no-repeat !important;
+            /* background-position: center center !important; */
             transform: translateZ(0);
             -webkit-transform: translateZ(0);
             -ms-transform: translateZ(0);
+            background-attachment: fixed;
+            background-position: left;
+            background-size: contain;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(imgs/Maalem-Financing-website.png)
         }
     </style>
     <link rel="stylesheet" href="css/bootstrap-social.css">
@@ -44,29 +64,31 @@
 </head>
 <body class="maalemtext home">
 
-
+<div style="position: fixed;">
+    <div class="fullBackground"></div>
+</div>
 <div id="wrapper">
     <div class="overlay"></div>
 
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <img src="imgs/maalem%20logo.PNG" class="img-responsive center-block"/>
-            </li>
-            <li class="active">
+
+                <img src="imgs/logo-rtl_2.PNG" class="img-responsive center-block"/>
+
+            <li class="active text-center">
                 <a class="arBold smallfont" href="index.html">الرئيسية</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="2.html">من نحن</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="4.html">تمويل الافراد</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
             </li>
             <!--<li class="dropdown">
@@ -80,19 +102,19 @@
                     <li><a class="arBold smallfont" href="#">One more separated link</a></li>
                 </ul>
             </li>-->
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="#">تمويل مقدمي الخدمات</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="6.html">الأسئلة المتكررة</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="newsslider.html">أخبار التمويل</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="#">خدمة العملاء</a>
             </li>
-            <li>
+            <li class="text-center">
                 <a class="arBold smallfont" href="form.html">نموذج</a>
             </li>
         </ul>
@@ -107,7 +129,7 @@
                     <div class="hamburger-box">
                         <div class="langAlignLeft">
                             <div class="fa fa-bars fa-3">
-                                <div class="langAlignRight">MENU</div>
+                                <div class="langAlignRightAr2">القائمة</div>
                             </div>
                         </div>
                     </div>
@@ -125,44 +147,42 @@
                     <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
-                <a class="maalemtext langAlignRight" href="#"><p>اعرفنا اكثر</p></a>
-                <a class="maalemtext langAlignRight" href="#"><p>جديد معالم</p></a>
+                <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
+                <a class="maalemtext langAlignRight xsremove" href="#"><p>اعرفنا اكثر</p></a>
+                <a class="maalemtext langAlignRight xsremove" href="#"><p>جديد معالم</p></a>
             </div>
         </div>
 
         <div class="backanimate">
-
             <div class="translucentback">
-
-
-                <div class="navbar navbar-default home-page">
-                    <div class="hamburger" data-toggle="offcanvas">
-                        <div class="hamburger-box">
-                            <div class="langAlignLeft">
-                                <div class="fa fa-bars fa-3">
-                                    <div class="langAlignRight">MENU</div>
+                    <div class="navbar navbar-default ">
+                        <div class="hamburger" data-toggle="offcanvas">
+                            <div class="hamburger-box">
+                                <div class="langAlignLeft">
+                                    <div class="fa fa-bars fa-3">
+                                        <div class="langAlignRightAr2">القائمة</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                        <a href="index.html"><img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
 
-                    <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
-                    <div class="socialnav">
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <div class="langAlignRight"><a href="en/3.html">ENGLISH</a></div>
+                        <div class="socialnav">
+                            <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
+                        <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
+                        <a class="langAlignRight maalemtext xsremove" href="#"><p>اعرفنا اكثر</p></a>
+                        <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
                     </div>
-                    <div class="langAlignRight tel xsremove"><p>9200 16916</p></div>
-                    <a class="langAlignRight maalemtext" href="#"><p>اعرفنا اكثر</p></a>
-                    <a class="langAlignRight maalemtext" href="#"><p>جديد معالم</p></a>
-                </div>
 
 
                 <div class="intro-section">
@@ -274,146 +294,158 @@
                 </div>
             </div>
         </div>
-        <section id="more" class="more ">
-            <div class="container divrtl">
-                <div class="moreitem">
-                    <p class="xl-large ">من نحن</p>
-                    <p class="text-center"> تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت في
-                        الربع من عام 2013،
-                        الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.</p>
+        <div class="translucentback2">
+            <section id="more" class="more ">
+                <div class="container divrtl">
+                    <div class="moreitem">
+                        <p class="xl-large ">من نحن</p>
+                        <p class="text-center"> تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت
+                            في
+                            الربع من عام 2013،
+                            الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.</p>
 
-                    <div class="row">
-
-                        <div class="col-md-4 padding-left-right50">
-                            <div class="center-block  img-responsive text-center">
-                                <img class="box-logo" src="imgs/kalimathraees.png"/>
-                            </div>
-                            <p class="no-margin large-aboutus text-center">كلمة رئيس
-
-                            </p>
-
-                            <p class="smallfont absolute-center text-center">اننا في شركة معالم للتمويل نــود وبكل
-                                أمتنان أن نـــواكب
-                                مســيرتكم لشراكة ناجحة ومستمرة ودائمة.
-
-
-                            </p>
-                            <button type="button"
-                                    class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus" onclick="location.href='2.html'">المزيد
-                            </button>
-                        </div>
-
-                        <div class="col-md-4 padding-left-right50">
-                            <div class="center-block  img-responsive text-center">
-
-                                <img class="box-logo" src="imgs/rooyatna.png"/>
-                            </div>
-                            <p class="no-margin large-aboutus text-center">رؤيتنا و رسالتنا
-
-                            </p>
-
-                            <p class="smallfont absolute-center text-center ">الاختيار المفضل في مجال التمويل لعملائنا
-                                في
-                                المملكة العربية
-                                السعودية وذلك حسب متطلبات مؤسسة النقد العربي السعودي .
-
-                            </p>
-                            <button type="button"
-                                    class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus" onclick="location.href='2.html'">المزيد
-                            </button>
-                        </div>
-
-                        <div class="col-md-4 padding-left-right50">
-                            <div class="center-block  img-responsive text-center">
-                                <img class="box-logo" src="imgs/ehdafna.png">
-                            </div>
-                            <p class="no-margin large-aboutus text-center">اهدافنا</p>
-                            <p class="smallfont absolute-center text-center ">تحسين مركزنا لتقديم حلول تمويلية لشرائح
-                                الأفراد و المؤسسات
-                                الصغيرة والمتوسطة و أن نكون الخيار الأول للعميل ضمن قطاع شركات التمويل
-
-                            </p>
-                            <button type="button"
-                                    class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus" onclick="location.href='2.html'">المزيد
-                            </button>
-                        </div>
                         <div class="row">
-                            <div class="col-md-6"><a href="http://www.simah.com">
-                                <div class="imagetextdiv text-center partnerlogo">
-                                    <img class="box-logo" src="imgs/simah.png"/>
+
+                            <div class="col-md-4 padding-left-right50">
+                                <div class="center-block  img-responsive text-center">
+                                    <img class="box-logo" src="imgs/kalimathraees.png"/>
                                 </div>
-                            </a>
+                                <p class="no-margin large-aboutus text-center">كلمة رئيس
+
+                                </p>
+
+                                <p class="smallfont absolute-center text-center">اننا في شركة معالم للتمويل نــود وبكل
+                                    أمتنان أن نـــواكب
+                                    مســيرتكم لشراكة ناجحة ومستمرة ودائمة.
+
+
+                                </p>
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
+                                        onclick="location.href='2.html'">المزيد
+                                </button>
                             </div>
-                            <div class="col-md-6"><a href="http://www.sama.gov.sa">
-                                <div class="imagetextdiv text-center partnerlogo">
-                                    <img class="box-logo" src="imgs/sama.png"/>
+
+                            <div class="col-md-4 padding-left-right50">
+                                <div class="center-block  img-responsive text-center">
+
+                                    <img class="box-logo" src="imgs/rooyatna.png"/>
                                 </div>
-                            </a>
+                                <p class="no-margin large-aboutus text-center">رؤيتنا و رسالتنا
+
+                                </p>
+
+                                <p class="smallfont absolute-center text-center ">الاختيار المفضل في مجال التمويل
+                                    لعملائنا
+                                    في
+                                    المملكة العربية
+                                    السعودية وذلك حسب متطلبات مؤسسة النقد العربي السعودي .
+
+                                </p>
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
+                                        onclick="location.href='2.html'">المزيد
+                                </button>
                             </div>
+
+                            <div class="col-md-4 padding-left-right50">
+                                <div class="center-block  img-responsive text-center">
+                                    <img class="box-logo" src="imgs/ehdafna.png">
+                                </div>
+                                <p class="no-margin large-aboutus text-center">اهدافنا</p>
+                                <p class="smallfont absolute-center text-center ">تحسين مركزنا لتقديم حلول تمويلية
+                                    لشرائح
+                                    الأفراد و المؤسسات
+                                    الصغيرة والمتوسطة و أن نكون الخيار الأول للعميل ضمن قطاع شركات التمويل
+
+                                </p>
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
+                                        onclick="location.href='2.html'">المزيد
+                                </button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><a href="http://www.simah.com">
+                                    <div class="imagetextdiv text-center partnerlogo">
+                                        <img class="box-logo" src="imgs/simah.png"/>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="col-md-6"><a href="http://www.sama.gov.sa">
+                                    <div class="imagetextdiv text-center partnerlogo">
+                                        <img class="box-logo" src="imgs/sama.png"/>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+
                         </div>
-
                     </div>
-                </div>
 
 
-                <div class="moreitem">
-                    <p class="xl-large ">أخبار التمويل</p>
+                    <div class="moreitem">
+                        <p class="xl-large ">أخبار التمويل</p>
 
-                    <div class="newsitem"><img class="newsitemimage" src="imgs/background_3_subitem_vectorized.png"/>
+                        <div class="newsitem"><img class="newsitemimage"
+                                                   src="imgs/background_3_subitem_vectorized.png"/>
+                            <p class="">
+
+                                أصدرت مؤسسة النقد العرتي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
+                                أكثر
+                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
+                                لوكالة
+
+                                الابناء السعودية واس ان التراخيص ال
+                                <button type="button"
+                                        class="btn btn-primary btn-lg outline smallfont center-block"
+                                        onclick="location.href='newsslider.html'">المزيد
+                                </button>
+                            </p>
+
+                        </div>
+                        <div class="text-center more-link" onclick="location.href='newsslider.html'">
+                            <img src="imgs/more.png" class="center-block img-responsive">
+                            <p>المزيد</p>
+                        </div>
+                    </div>
+
+                    <div class="moreitem">
+                        <p class="xl-large ">لماذا معالم</p>
                         <p class="">
-
-                            أصدرت مؤسسة النقد العرتي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو أكثر
-                            من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح لوكالة
-
-                            الابناء السعودية واس ان التراخيص ال
-                            <button type="button"
-                                    class="btn btn-primary btn-lg outline smallfont center-block" onclick="location.href='newsslider.html'">المزيد
-                            </button>
+                            تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت في
+                            الربع من عام 2013،
+                            الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.
                         </p>
 
-                    </div>
-                    <div class="text-center more-link" onclick="location.href='newsslider.html'" >
-                        <img src="imgs/more.png" class="center-block img-responsive">
-                        <p>المزيد</p>
-                    </div>
-                </div>
+                        <div class="text-center more-link" onclick="location.href='2.html'">
+                            <img src="imgs/more.png" class="center-block img-responsive">
+                            <p>المزيد</p>
+                        </div>
 
-                <div class="moreitem">
-                    <p class="xl-large ">لماذا معالم</p>
-                    <p class="">
-                        تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت في
-                        الربع من عام 2013،
-                        الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.
-                    </p>
-
-                    <div class="text-center more-link" onclick="location.href='2.html'">
-                        <img src="imgs/more.png" class="center-block img-responsive">
-                        <p>المزيد</p>
                     </div>
+
 
                 </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="socialfooter">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a>9200 16916</a>
             </div>
-        </section>
+            <div class="contact-us"><a href="mailto:info@maalem.com.sa">info@maalem.com.sa</a><p> &nbsp;| </p> <a href="tel:920016916">9200 16916</a></div>
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved</p>
 
+        </footer>
     </div>
     <!-- /#page-content-wrapper -->
-    <footer class="footer">
-        <div class="socialfooter">
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a>9200 16916</a>
-        </div>
-        <p>info@maalem.com.sa | 9200 16916</p>
-        <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved</p>
-
-    </footer>
 </div>
 
 <!-- /#wrapper -->
@@ -490,32 +522,7 @@
         });
 
 
-        /*var i = 1;
-         var imghead = [
-         "url(backsliderimgs/001.jpg)",
-         "url(backsliderimgs/002.jpg)",
-         "url(backsliderimgs/003.jpg)",
-         "url(backsliderimgs/004.jpg)",
-         "url(backsliderimgs/005.jpg)",
-         "url(backsliderimgs/006.jpg)",
-         "url(backsliderimgs/007.jpg)"
-         ];//add as many images as you like
-         jQuery('.backanimate').css('background', imghead[0]);
-         function slideimg() {
-
-         setTimeout(function () {
-
-         jQuery('.backanimate').css('background', imghead[i]);
-         i++;
-         if (i == imghead.length) i = 0;
-         slideimg();
-         }, 10000);
-
-         }
-
-         slideimg();*/
-
-        $(".backanimate").bgswitcher({
+        $(".fullBackground").bgswitcher({
             images: ["backsliderimgs/001.jpg",
                 "backsliderimgs/002.jpg",
                 "backsliderimgs/003.jpg",
@@ -530,6 +537,8 @@
             duration: 5000, // Effect duration
             easing: "swing" // Effect easing
         });
+
+        //$(".fullBackground").bgswitcher("destroy");
     });
 
 </script>
@@ -550,6 +559,3 @@
 
 </body>
 </html>
-
-
-
