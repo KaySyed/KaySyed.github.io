@@ -109,6 +109,7 @@ html {
     font-family: abadi_mt_condensed_lightRg;
     color: #005f61;
 }
+
 .maalemtextar {
     font-size: 21px;
     font-family: ge_flowregular;
@@ -126,7 +127,9 @@ html {
     font-size: 1.5em;
     font-family: abadi_mt_condensed_lightRg;
     margin: 5px;
+    /*
     font-weight: bold;
+    */
 }
 
 arH2 {
@@ -945,6 +948,7 @@ p {
     background: rgba(0, 0, 0, 0.20);
     flex: 1;
     position: relative;
+    min-height: 90vh;
 }
 
 .translucentback2 {
@@ -975,6 +979,7 @@ p {
 .backanimate {
     color: #fff;
     margin: 0;
+    min-height: 90vh;
 }
 
 .home .backanimate, .home .translucentback {
@@ -1084,7 +1089,8 @@ p {
     color: #fff !important;
     margin: 0;
 }
-.contact-us p, .contact-us a{
+
+.contact-us p, .contact-us a {
     display: inline-block;
 }
 
@@ -1232,6 +1238,7 @@ p {
     padding: 0 15px;
     margin: 30px 0;
 }
+
 .aboutus-item-header {
     background: rgba(42, 141, 100, 1);
     /*
@@ -1240,17 +1247,19 @@ p {
     background: linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);
 -moz-linear-gradient(left, rgba(42, 141, 100, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42, 141, 100, 1)), color-stop(100%, rgba(38, 124, 128, 1)));
-    background:  -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
+    margin: 30px 0;
 }
-.structure-img{
-    width:100%;
+
+.structure-img {
+    width: 100%;
 }
+
 .aboutus-text {
     min-height: 220px
 }
@@ -1282,8 +1291,47 @@ p {
     top: -5px;
 }
 
-.img-responsive.center-block{
-    padding:15px;
+.img-responsive.center-block {
+    padding: 15px;
+}
+
+.dropdown-menu li.active::before {
+    background-color: #004d4e;
+}
+
+.dropdown-menu .active a {
+    background-color: transparent;
+}
+
+.maalemlist {
+    list-style: none;
+    margin: 2em;
+    padding: 0;
+}
+
+.maalemlist li {
+    margin: 0;
+    margin-bottom: 1em;
+    padding-right: 1.5em;
+    position: relative;
+}
+
+.maalemlist li:before {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: #1c6e2a;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0.5em;
+    left: -20px;
+}
+
+.dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1592,8 +1640,9 @@ p {
     .calcres, .calcresbtn {
         font-size: 48px;
     }
-    .imagetextdiv.text-center.partnerlogo{
-        margin-top:10px !important;
+
+    .imagetextdiv.text-center.partnerlogo {
+        margin-top: 10px !important;
     }
 }
 

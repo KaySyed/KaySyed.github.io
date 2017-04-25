@@ -19,9 +19,9 @@
     <style>
         .backanimate {
             overflow: hidden;
-/*
-            background-image: url(imgs/Maalem-Financing-website.png);
-*/
+            /*
+                        background-image: url(imgs/Maalem-Financing-website.png);
+            */
             -webkit-transition: background-image 3s ease-in-out;
             -moz-transition: background-image 3s ease-in-out;
             -o-transition: background-image 3s ease-in-out;
@@ -74,13 +74,22 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
 
-                <img src="imgs/logo-rtl_2.PNG" class="img-responsive center-block"/>
+            <img src="imgs/logo-rtl_2.PNG" class="img-responsive center-block"/>
 
             <li class="active text-center">
                 <a class="arBold smallfont" href="index.html">الرئيسية</a>
             </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="2.html">من نحن</a>
+            <li class="text-center dropdown">
+                <a class="arBold smallfont dropdown-toggle divrtl" href="#" data-toggle="dropdown">من نحن <span
+                        class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="arBold smallfont" href="chairman.html">كلمة رئيس</a></li>
+                    <li><a class="arBold smallfont" href="goals.html">أهدافنا</a></li>
+                    <li><a class="arBold smallfont" href="vision.html">رؤيتنا</a></li>
+                    <li><a class="arBold smallfont" href="message.html">رسالتنا</a></li>
+                    <li><a class="arBold smallfont" href="structure.html">الهيكل الإداري
+                    </a></li>
+                </ul>
             </li>
             <li class="text-center">
                 <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
@@ -155,34 +164,34 @@
 
         <div class="backanimate">
             <div class="translucentback">
-                    <div class="navbar navbar-default ">
-                        <div class="hamburger" data-toggle="offcanvas">
-                            <div class="hamburger-box">
-                                <div class="langAlignLeft">
-                                    <div class="fa fa-bars fa-3">
-                                        <div class="langAlignRightAr2">القائمة</div>
-                                    </div>
+                <div class="navbar navbar-default ">
+                    <div class="hamburger" data-toggle="offcanvas">
+                        <div class="hamburger-box">
+                            <div class="langAlignLeft">
+                                <div class="fa fa-bars fa-3">
+                                    <div class="langAlignRightAr2">القائمة</div>
                                 </div>
                             </div>
                         </div>
-
-                        <a href="index.html"><img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
-
-                        <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
-                        <div class="socialnav">
-                            <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
-                        <a class="langAlignRight maalemtext xsremove" href="#"><p>اعرفنا اكثر</p></a>
-                        <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
                     </div>
+
+                    <a href="index.html"><img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
+
+                    <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
+                    <div class="socialnav">
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
+                    <a class="langAlignRight maalemtext xsremove" href="#"><p>اعرفنا اكثر</p></a>
+                    <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
+                </div>
 
 
                 <div class="intro-section">
@@ -259,7 +268,7 @@
                                     </div>
 
                                     <div class="col-md-4 ">
-                                        <div class="imagetextdiv" onclick="location.href='4.html'">
+                                        <div class="imagetextdiv" onclick="location.href='3.html'">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <p class=" large">للتيسير معالم</p>
@@ -437,10 +446,12 @@
                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a>9200 16916</a>
+
             </div>
-            <div class="contact-us"><a href="mailto:info@maalem.com.sa">info@maalem.com.sa</a><p> &nbsp;| </p> <a href="tel:920016916">9200 16916</a></div>
-            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved</p>
+            <div class="contact-us"><a href="mailto:info@maalem.com.sa">info@maalem.com.sa</a>
+                <p> &nbsp;| </p> <a href="tel:920016916">9200 16916</a></div>
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved
+            </p>
 
         </footer>
     </div>

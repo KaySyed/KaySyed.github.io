@@ -84,7 +84,6 @@ html {
     float: right !important;
 }
 
-
 .langAlignRightAr2 {
     font-family: ge_flowregular;
     position: relative;
@@ -130,7 +129,9 @@ html {
     font-size: 1.5em;
     font-family: ge_flowregular;
     margin: 5px;
+    /*
     font-weight: bold;
+    */
 }
 
 arH2 {
@@ -521,8 +522,8 @@ label {
 
 }
 
-.img-responsive.center-block{
-    padding:15px;
+.img-responsive.center-block {
+    padding: 15px;
 }
 
 .holider-height {
@@ -706,7 +707,7 @@ label {
     transition: all ease-in-out 0.3s;
 }
 
-.more-link{
+.more-link {
     cursor: pointer;
 }
 
@@ -785,13 +786,13 @@ p {
     height: 100%;
 }
 
-.newsitem.newsxl .title{
+.newsitem.newsxl .title {
     font-weight: bold;
 }
 
 .newsitem.newsxl .newsitemimage {
     height: 150px;
-    width:150px;
+    width: 150px;
     margin: 8px;
 }
 
@@ -858,7 +859,7 @@ p {
     width: 100px;
     background: #fff;
     border: 8px #005f61 solid;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .moreitem {
@@ -882,7 +883,7 @@ p {
     -webkit-border-image: -webkit-linear-gradient(left, #184657 0%, #35c577 100%);
     border-image: linear-gradient(to right, #184657 0%, #35c577 100%);
     border-image-slice: 1;*/
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .moreitem:nth-of-type(2n) {
@@ -891,7 +892,7 @@ p {
     -webkit-border-image: -webkit-linear-gradient(left, #35c577 0%, #184657 100%);
     border-image: linear-gradient(to right, #35c577 0%, #184657 100%);
     border-image-slice: 1;*/
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid #fff;
 
 }
 
@@ -899,7 +900,7 @@ p {
     /*-moz-border-image: none;
     -webkit-border-image: none;
     border-image: none;*/
-    border-bottom:none;
+    border-bottom: none;
 }
 
 .nav-logo {
@@ -965,7 +966,7 @@ p {
     background: rgba(0, 0, 0, 0.20);
     flex: 1;
     position: relative;
-    min-height:91vh;
+    min-height: 90vh;
 }
 
 .translucentback2 {
@@ -984,7 +985,8 @@ p {
 }
 
 .home {
-    background-image: url(../imgs/Maalem-Financing-website.png) !important;}
+    background-image: url(../imgs/Maalem-Financing-website.png) !important;
+}
 
 .backanimate p, .backanimate a {
     color: #fff;
@@ -993,25 +995,26 @@ p {
 .backanimate {
     color: #fff;
     margin: 0;
-    min-height:91vh;
+    min-height: 90vh;
 }
 
-.home .backanimate, .home .translucentback{
-    height:100vh;
+.home .backanimate, .home .translucentback {
+    height: 100vh;
 }
 
-.internal-heading{
-    background: rgba(41,142,97,1);
-    background: -moz-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,142,97,1)), color-stop(100%, rgba(42,113,146,1)));
-    background: -webkit-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
-    background: -o-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
-    background: -ms-linear-gradient(left, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
-    background: linear-gradient(to right, rgba(41,142,97,1) 0%, rgba(42,113,146,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#298e61', endColorstr='#2a7192', GradientType=1 );
-    padding:10px;
+.internal-heading {
+    background: rgba(41, 142, 97, 1);
+    background: -moz-linear-gradient(left, rgba(41, 142, 97, 1) 0%, rgba(42, 113, 146, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41, 142, 97, 1)), color-stop(100%, rgba(42, 113, 146, 1)));
+    background: -webkit-linear-gradient(left, rgba(41, 142, 97, 1) 0%, rgba(42, 113, 146, 1) 100%);
+    background: -o-linear-gradient(left, rgba(41, 142, 97, 1) 0%, rgba(42, 113, 146, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(41, 142, 97, 1) 0%, rgba(42, 113, 146, 1) 100%);
+    background: linear-gradient(to right, rgba(41, 142, 97, 1) 0%, rgba(42, 113, 146, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#298e61', endColorstr='#2a7192', GradientType=1);
+    padding: 10px;
     color: #fff;
 }
+
 /*
 .internal-heading:nth-child(even){
     background: rgba(42,113,146,1);
@@ -1026,8 +1029,8 @@ p {
     color: #fff;
 }*/
 
-.intro-section .translucentback .container{
-    padding-top:10px;
+.intro-section .translucentback .container {
+    padding-top: 10px;
 }
 
 .fa-linkedin:hover {
@@ -1097,9 +1100,11 @@ p {
     color: #fff !important;
     margin: 0;
 }
-.contact-us p, .contact-us a{
+
+.contact-us p, .contact-us a {
     display: inline-block;
 }
+
 .smallfont.alignmargin {
     min-height: 100px;
     max-height: 100px;
@@ -1157,24 +1162,24 @@ p {
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white ;
+    background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     padding: 0 15px;
 }
 
-.requestrow{
-    margin:40px 0;
+.requestrow {
+    margin: 40px 0;
 }
 
-.requestrow p{
+.requestrow p {
     color: #005f61;;
 }
 
-.requestrow div .partnerlogo{
-    height:100px;
+.requestrow div .partnerlogo {
+    height: 100px;
     line-height: 1;
-    padding:0 15px;
+    padding: 0 15px;
 }
 
 .requestcalc {
@@ -1183,24 +1188,24 @@ p {
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white ;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    padding: 0 15px; white
+    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    padding: 0 15px;
 }
 
 .aboutus-item-header1 {
     background: rgba(40, 132, 115, 1);
     background-image: url('../imgs/saudimaalem.png');
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -moz-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-gradient(left top, right top, color-stop(0 %, rgba(40, 132, 115, 1)), color-stop(100 %, rgba(38, 124, 128, 1)));
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -o-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -ms-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
-    background: url(../imgs/saudimaalem.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, linear-gradient(to right, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -moz-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-gradient(left top, right top, color-stop(0 %, rgba(40, 132, 115, 1)), color-stop(100 %, rgba(38, 124, 128, 1)));
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -o-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -ms-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
+    background: url(../imgs/saudimaalem.png) 16px / 170px no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, linear-gradient(to right, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#288473', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
+    margin: 30px 0;
 }
 
 .aboutus-item-header2 {
@@ -1215,7 +1220,7 @@ p {
     background: url(../imgs/dart.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
+    margin: 30px 0;
 }
 
 .aboutus-item-header3 {
@@ -1229,7 +1234,7 @@ p {
     background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, linear-gradient(to right, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#288473', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
+    margin: 30px 0;
 }
 
 .aboutus-item-header4 {
@@ -1244,7 +1249,7 @@ p {
     background: url(../imgs/message.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
+    margin: 30px 0;
 }
 
 .aboutus-item-header {
@@ -1255,25 +1260,28 @@ p {
     background: linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);
 -moz-linear-gradient(left, rgba(42, 141, 100, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42, 141, 100, 1)), color-stop(100%, rgba(38, 124, 128, 1)));
-    background:  -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    background:  linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
+    background: linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
     padding: 0 15px;
-    margin: 30px  0;
-}
-.structure-img{
-    width:100%;
-}
-.aboutus-text{
-    min-height:220px
-}
-.aboutus-text-less{
-    min-height:100px
+    margin: 30px 0;
 }
 
-.aboutus-item-header1 p, .aboutus-item-header2 p , .aboutus-item-header3 p, .aboutus-item-header4 p {
+.structure-img {
+    width: 100%;
+}
+
+.aboutus-text {
+    min-height: 220px
+}
+
+.aboutus-text-less {
+    min-height: 100px
+}
+
+.aboutus-item-header1 p, .aboutus-item-header2 p, .aboutus-item-header3 p, .aboutus-item-header4 p {
     color: #fff;
 }
 
@@ -1296,11 +1304,51 @@ p {
     top: -5px;
 }
 
+.dropdown-menu li.active::before {
+    background-color: #004d4e;
+}
+
+.dropdown-menu .active a {
+    background-color: transparent;
+}
+
+.maalemlist {
+    list-style: none;
+    margin: 2em;
+    padding: 0;
+}
+
+.maalemlist li {
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.maalemlist li:before {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: #1c6e2a;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0.6em;
+    right: -20px;
+}
+
+.dropdown-toggle .caret {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
 @media screen and (max-width: 480px) {
     .navbar-default {
         margin-bottom: 0 !important;
     }
-    .langAlignRightAr2{
+
+    .langAlignRightAr2 {
         display: none;
     }
 
@@ -1327,7 +1375,7 @@ p {
 
     .hamburger {
         top: 20px !important;
-        right:35px !important;
+        right: 35px !important;
     }
 
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -1472,7 +1520,8 @@ p {
     .maalemtext {
         font-size: 17px;
     }
-    .hamburger{
+
+    .hamburger {
         /*right:35px !important;*/
     }
 }
@@ -1508,8 +1557,9 @@ p {
     .calcres, .calcresbtn {
         font-size: 48px;
     }
-    .imagetextdiv.text-center.partnerlogo{
-        margin-top:10px !important;
+
+    .imagetextdiv.text-center.partnerlogo {
+        margin-top: 10px !important;
     }
 }
 
@@ -1524,8 +1574,8 @@ p {
         font-size: 40px;
     }
 
-    .home .backanimate, .home .translucentback{
-        height:auto;
+    .home .backanimate, .home .translucentback {
+        height: auto;
     }
 
     .page-heading {
@@ -1562,8 +1612,8 @@ p {
     }
 }
 
-@media screen and (max-width: 800px){
-    .xsremove{
+@media screen and (max-width: 800px) {
+    .xsremove {
         display: none;
     }
 }
