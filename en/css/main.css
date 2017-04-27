@@ -107,7 +107,7 @@ html {
 .maalemtext {
     font-size: 21px;
     font-family: abadi_mt_condensed_lightRg;
-    color: #005f61;
+    color: #fff;
 }
 
 .maalemtextar {
@@ -204,7 +204,9 @@ arH2 {
 }
 
 p, a {
+    /*
     color: #fff;
+    */
 }
 
 .btn {
@@ -834,7 +836,7 @@ p {
 }
 
 .newsitem p {
-    color: #fff !important;
+    color: #fff;
     margin-left: 10px;
 }
 
@@ -1332,6 +1334,32 @@ p {
     position: absolute;
     right: 10px;
     top: 20px;
+}
+
+
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    display: block;
+}
+
+body.maalemtext{
+    z-index: 2;
+}
+
+.xl-large.text-center{
+    text-align:center !important;
+}
+
+.more-link{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
