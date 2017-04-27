@@ -71,17 +71,7 @@
             <li  class="text-center">
                 <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
             </li>
-            <!--<li class="dropdown">
-                <a class="arBold smallfont" href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a class="arBold smallfont" href="#">Action</a></li>
-                    <li><a class="arBold smallfont" href="#">Another action</a></li>
-                    <li><a class="arBold smallfont" href="#">Something else here</a></li>
-                    <li><a class="arBold smallfont" href="#">Separated link</a></li>
-                    <li><a class="arBold smallfont" href="#">One more separated link</a></li>
-                </ul>
-            </li>-->
+
             <li class="text-center">
                 <a class="arBold smallfont" href="#">تمويل مقدمي الخدمات</a>
             </li>
@@ -113,9 +103,9 @@
                     </div>
                 </div>
             </div>
-            <img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG">
+            <a href="index.html"> <img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
 
-            <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
+            <div class="langAlignRight"><a href="en/newsslider.html">ENGLISH</a></div>
             <div class="socialnav">
                 <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
@@ -146,9 +136,9 @@
                         </div>
                     </div>
 
-                    <a href="index.html"><img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
+                    <a href="index.html"><img class="nav-logo pull-left turn-white-logo" src="imgs/logo-rtl_2.PNG"></a>
 
-                    <div class="langAlignRight"><a href="en/3.html">ENGLISH</a></div>
+                    <div class="langAlignRight"><a href="en/newsslider.html">ENGLISH</a></div>
                     <div class="socialnav">
                         <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
@@ -163,7 +153,7 @@
                     <a class="langAlignRight maalemtext xsremove" href="#"><p>اعرفنا اكثر</p></a>
                     <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
                 </div>
-
+                <div class="btn-group-justified text-center" style="position: fixed;top:70px; z-index:9999999;"><button class="btn btn-primary btn1">1</button><button class="btn btn-primary btn2">2</button> </div>
 
                 <div class="container divrtl">
                     <div class="fluid_container">
@@ -350,8 +340,8 @@
 
                         </div>
 
-                        <div class="text-center">
-                            <img src="imgs/more.png" class="center-block img-responsive">
+                        <div class="text-center ">
+                            <img src="imgs/more.png" class="center-block img-responsive diamond-btn">
                             <p>المزيد</p>
                         </div>
                     </div>
@@ -380,6 +370,9 @@
     <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved</p>
 
 </footer>
+<video autoplay loop id="video-background" muted>
+    <source src="http://sauditharwa.com/wp-content/uploads/2017/02/tharwahome-v7-ultrawide.mp4?_=1" type="video/mp4">
+</video>
 
 <!-- /#wrapper -->
 
@@ -388,101 +381,7 @@
 <script src="js/jquery.bgswitcher.js"></script>
 
 
-<script>
-    /**
-     * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-     *
-     * @private
-     * @author Todd Motto
-     * @link https://github.com/toddmotto/foreach
-     * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-     * @callback requestCallback      callback   - Callback function for each iteration.
-     * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-     * @returns {}
-     */
-    var forEach = function (t, o, r) {
-        if ("[object Object]" === Object.prototype.toString.call(t))for (var c in t)Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++)o.call(r, t[e], e, t)
-    };
-
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-            hamburger.addEventListener("click", function () {
-                this.classList.toggle("is-active");
-            }, false);
-        });
-    }
-</script>
-
-<script>
-    $(document).ready(function () {
-        var trigger = $('.hamburger'),
-            overlay = $('.overlay'),
-            isClosed = false;
-
-        trigger.click(function () {
-            hamburger_cross();
-        });
-        overlay.click(function () {
-            hamburger_cross();
-        });
-
-        function hamburger_cross() {
-
-            if (isClosed == true) {
-                overlay.hide();
-                trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
-            } else {
-                overlay.show();
-                trigger.removeClass('is-closed');
-                trigger.addClass('is-open');
-                isClosed = true;
-            }
-        }
-
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-        $('.overlay').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-
-
-        $(".fullBackground").bgswitcher({
-            images: ["backsliderimgs/001.jpg",
-                "backsliderimgs/002.jpg",
-                "backsliderimgs/003.jpg",
-                "backsliderimgs/004.jpg",
-                "backsliderimgs/005.jpg",
-                "backsliderimgs/006.jpg",
-                "backsliderimgs/007.jpg"], // Background images
-            effect: "fade", // fade, blind, clip, slide, drop, hide
-            interval: 10000, // Interval of switching
-            loop: true, // Loop the switching
-            shuffle: false, // Shuffle the order of an images
-            duration: 5000, // Effect duration
-            easing: "swing" // Effect easing
-        });
-        $(".fullBackground").bgswitcher('destroy');
-
-        });
-
-</script>
-<script type="text/javascript">
-    (function ($) {
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > $('.navbar-default:visible').height() - 5) {
-                    $('.second-nav').fadeIn(500);
-                } else {
-                    $('.second-nav').fadeOut(500);
-                }
-            });
-        });
-    })(jQuery);
-</script>
-
+<script>var xyzxyz=0;</script>
+<script src="js/site.js"></script>
 </body>
 </html>

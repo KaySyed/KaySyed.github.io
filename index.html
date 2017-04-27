@@ -30,28 +30,8 @@
             background-size: contain !important;
             background-repeat: no-repeat !important;
             background-position: left center !important;
-
         }
 
-        .backanimate2 {
-            overflow: hidden;
-            background-image: url(imgs/Maalem-Financing-website.png);
-            -webkit-transition: background-image 3s ease-in-out;
-            -moz-transition: background-image 3s ease-in-out;
-            -o-transition: background-image 3s ease-in-out;
-            -ms-transition: background-image 3s ease-in-out;
-            transition: background-image 3s ease-in-out;
-            /* background-size: cover !important; */
-            background-repeat: no-repeat !important;
-            /* background-position: center center !important; */
-            transform: translateZ(0);
-            -webkit-transform: translateZ(0);
-            -ms-transform: translateZ(0);
-            background-attachment: fixed;
-            background-position: left;
-            background-size: contain;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(imgs/Maalem-Financing-website.png)
-        }
     </style>
     <link rel="stylesheet" href="css/bootstrap-social.css">
 
@@ -138,12 +118,12 @@
                     <div class="hamburger-box">
                         <div class="langAlignLeft">
                             <div class="fa fa-bars fa-3">
-                                <div class="langAlignRightAr2">القائمة</div>
+                                <div class="langAlignRightAr2 maalemtext">القائمة</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG">
+                <a href="index.html"> <img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
 
                 <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
                 <div class="socialnav">
@@ -169,13 +149,13 @@
                         <div class="hamburger-box">
                             <div class="langAlignLeft">
                                 <div class="fa fa-bars fa-3">
-                                    <div class="langAlignRightAr2">القائمة</div>
+                                    <div class="langAlignRightAr2 maalemtext">القائمة</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <a href="index.html"><img class="nav-logo pull-left" src="imgs/logo-rtl_2.PNG"></a>
+                    <a href="index.html"><img class="nav-logo pull-left turn-white-logo" src="imgs/logo-rtl_2.PNG"></a>
 
                     <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
                     <div class="socialnav">
@@ -193,16 +173,17 @@
                     <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
                 </div>
 
+                <div class="btn-group-justified text-center" style="position: fixed;top:70px; z-index:9999999;"><button class="btn btn-primary btn1">1</button><button class="btn btn-primary btn2">2</button> </div>
 
                 <div class="intro-section">
 
                     <div class="container divrtl">
                         <div class="col-md-12">
-                            <img src="imgs/logo-rtl_2.PNG" class="img-responsive center-block main-logo"/>
+                            <img src="imgs/logo-rtl_2.PNG" class="img-responsive center-block main-logo turn-white-logo"/>
                             <p class=" text-center"><strong>لكل مرحلة مطلب ولكل مطلب معالم</strong></p>
                             <p class=" text-center">- تمويل متطابق مع مبادئ واحكام الشريعة الأسلامية -</p>
                             <div class="borderWhite">
-                                <p class="no-margin text-left"><strong>حاسبة التمويل |</strong> قم بحساب
+                                <p class="no-margin"><strong>حاسبة التمويل |</strong> قم بحساب
                                     تمويلك الاًن
 
                                     <i class="pull-right fa fa-calculator calculator xsremove"
@@ -227,7 +208,7 @@
                                                     <p class=" large">للنمو معالم</p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <img class="box-logo" src="imgs/stocks.png"/>
+                                                    <img class="box-logo stocks" src="imgs/stocks.png"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -250,7 +231,7 @@
                                                     <p class=" large">للرفاهية معالم</p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <img class="box-logo" src="imgs/car.png"/>
+                                                    <img class="box-logo car" src="imgs/car.png"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,7 +255,7 @@
                                                     <p class=" large">للتيسير معالم</p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <img class="box-logo"
+                                                    <img class="box-logo bankbottle"
                                                          src="imgs/bankbottle.png"/>
                                                 </div>
                                             </div>
@@ -413,7 +394,7 @@
 
                         </div>
                         <div class="text-center more-link" onclick="location.href='newsslider.html'">
-                            <img src="imgs/more.png" class="center-block img-responsive">
+                            <img src="imgs/more.png" class="center-block img-responsive diamond-btn">
                             <p>المزيد</p>
                         </div>
                     </div>
@@ -427,7 +408,7 @@
                         </p>
 
                         <div class="text-center more-link" onclick="location.href='2.html'">
-                            <img src="imgs/more.png" class="center-block img-responsive">
+                            <img src="imgs/more.png" class="center-block img-responsive diamond-btn">
                             <p>المزيد</p>
                         </div>
 
@@ -459,6 +440,9 @@
 
 </div>
 
+<video autoplay loop id="video-background" muted>
+    <source src="http://sauditharwa.com/wp-content/uploads/2017/02/tharwahome-v7-ultrawide.mp4?_=1" type="video/mp4">
+</video>
 <!-- /#wrapper -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -470,103 +454,7 @@
 <script src="js/scrolling-nav.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>
-
-<script>
-    /**
-     * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-     *
-     * @private
-     * @author Todd Motto
-     * @link https://github.com/toddmotto/foreach
-     * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-     * @callback requestCallback      callback   - Callback function for each iteration.
-     * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-     * @returns {}
-     */
-    var forEach = function (t, o, r) {
-        if ("[object Object]" === Object.prototype.toString.call(t))for (var c in t)Object.totype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++)o.call(r, t[e], e, t)
-    };
-
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-            hamburger.addEventListener("click", function () {
-                this.classList.toggle("is-active");
-            }, false);
-        });
-    }
-</script>
-
-<script>
-    $(document).ready(function () {
-        var trigger = $('.hamburger'),
-            overlay = $('.overlay'),
-            isClosed = false;
-
-        trigger.click(function () {
-            hamburger_cross();
-        });
-        overlay.click(function () {
-            hamburger_cross();
-        });
-
-        function hamburger_cross() {
-
-            if (isClosed == true) {
-                overlay.hide();
-                trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
-            } else {
-                overlay.show();
-                trigger.removeClass('is-closed');
-                trigger.addClass('is-open');
-                isClosed = true;
-            }
-        }
-
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-        $('.overlay').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-
-
-        $(".fullBackground").bgswitcher({
-            images: ["backsliderimgs/001.jpg",
-                "backsliderimgs/002.jpg",
-                "backsliderimgs/003.jpg",
-                "backsliderimgs/004.jpg",
-                "backsliderimgs/005.jpg",
-                "backsliderimgs/006.jpg",
-                "backsliderimgs/007.jpg"], // Background images
-            effect: "fade", // fade, blind, clip, slide, drop, hide
-            interval: 10000, // Interval of switching
-            loop: true, // Loop the switching
-            shuffle: false, // Shuffle the order of an images
-            duration: 5000, // Effect duration
-            easing: "swing" // Effect easing
-        });
-
-        $(".fullBackground").bgswitcher("destroy");
-    });
-
-</script>
-
-<script type="text/javascript">
-    (function ($) {
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > $('.backanimate:visible').height() - 5) {
-                    $('.second-nav').fadeIn(500);
-                } else {
-                    $('.second-nav').fadeOut(500);
-                }
-            });
-        });
-    })(jQuery);
-</script>
-
+<script>var xyzxyz=1;</script>
+<script src="js/site.js"></script>
 </body>
 </html>
