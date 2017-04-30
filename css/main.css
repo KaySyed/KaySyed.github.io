@@ -1366,8 +1366,7 @@ body.maalemtext{
     }
 
     .nav-logo {
-        height: 70px;
-        margin-right: 50px;
+        display: none !important;
     }
 
     .tel {
@@ -1466,7 +1465,7 @@ body.maalemtext{
     }
 
     .newsitem .newsitemimage {
-        float: none;
+        /*float: none;*/
     }
 
     .home-page {
@@ -1538,6 +1537,10 @@ body.maalemtext{
 @media screen and (max-width: 375px) {
     .imagetextdiv {
         margin: 0 !important;
+    }
+
+    .newsitem button{
+        float: none;
     }
 
     .main-logo {

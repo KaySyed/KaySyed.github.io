@@ -180,8 +180,8 @@ var isMobile = {
     }
 };
 
-if(!isMobile.any()) {
+if(isMobile.any()) {
     //alert("device");
-    /*$(".btn2").css('display','none');
-    $("#video-background").css('display','none');*/
+    $(".btn2").css('display','none');
+    $("#video-background").css('display','none');
 }
