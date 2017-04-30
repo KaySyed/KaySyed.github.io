@@ -1147,13 +1147,7 @@ p {
 
 .requestform {
     background: rgba(40, 132, 115, 1);
-    background-image: url('../imgs/saudimaalem.png');
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
-    background: url(../imgs/request.png) 80% / 18% no-repeat white;
+    background: url(../imgs/request.png) 80% / 150px no-repeat white;
     padding: 0 15px;
 }
 
@@ -1173,7 +1167,7 @@ p {
 
 .requestcalc {
     background: rgba(40, 132, 115, 1);
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 80% / 150px no-repeat white;
     padding: 0 15px;
 }
 
