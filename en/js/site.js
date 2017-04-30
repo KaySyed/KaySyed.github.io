@@ -181,5 +181,5 @@ var isMobile = {
 };
 
 if(isMobile.any()) {
-    alert("mobile");
+    //alert("mobile");
 }
