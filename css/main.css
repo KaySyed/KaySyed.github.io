@@ -848,7 +848,7 @@ p {
 }
 
 .newsitem p {
-    color: #fff !important;
+    color: #fff;
     margin-right: 10px;
 }
 
