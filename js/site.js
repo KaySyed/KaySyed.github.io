@@ -182,5 +182,5 @@ var isMobile = {
 
 if(isMobile.any()) {
     alert("mobile");
-    $('.btn2').css('display', 'none');
+    $(".btn2").css('display','none');
 }
