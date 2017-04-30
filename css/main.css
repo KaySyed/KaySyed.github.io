@@ -1158,12 +1158,7 @@ p {
 
 .requestform {
     background: rgba(40, 132, 115, 1);
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
-    background: url(../imgs/request.png) 20% / 18% no-repeat white;
+    background: url(../imgs/request.png) 20% / 150px no-repeat white;
     padding: 0 15px;
 }
 
@@ -1183,12 +1178,7 @@ p {
 
 .requestcalc {
     background: rgba(40, 132, 115, 1);
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
+    background: url(../imgs/calc_maalem.png) 20% / 150px no-repeat white;
     padding: 0 15px;
 }
 
