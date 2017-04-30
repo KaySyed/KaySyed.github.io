@@ -1173,12 +1173,6 @@ p {
 
 .requestcalc {
     background: rgba(40, 132, 115, 1);
-    background-image: url('../imgs/saudimaalem.png');
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
-    background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 80% / 60% no-repeat white;
     padding: 0 15px;
 }
@@ -1359,6 +1353,10 @@ body.maalemtext{
 }
 
 .more-link{
+    cursor: pointer;
+}
+
+.link-to-calc{
     cursor: pointer;
 }
 

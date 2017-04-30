@@ -748,7 +748,7 @@ label {
 }
 
 .box-logo {
-    height: 124px;
+    height: 112px;
 }
 
 .page-scroll {
@@ -848,7 +848,7 @@ p {
 }
 
 .newsitem p {
-    color: #fff;
+    color: #fff !important;
     margin-right: 10px;
 }
 
@@ -1158,7 +1158,6 @@ p {
 
 .requestform {
     background: rgba(40, 132, 115, 1);
-    background-image: url('../imgs/saudimaalem.png');
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
     background: url(../imgs/request.png) 20% / 18% no-repeat white;
@@ -1184,7 +1183,6 @@ p {
 
 .requestcalc {
     background: rgba(40, 132, 115, 1);
-    background-image: url('../imgs/saudimaalem.png');
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
     background: url(../imgs/calc_maalem.png) 20% / 60% no-repeat white;
@@ -1225,7 +1223,6 @@ p {
 
 .aboutus-item-header3 {
     background: rgba(40, 132, 115, 1);
-    background-image: url('../imgs/saudimaalem.png');
     background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -moz-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-gradient(left top, right top, color-stop(0 %, rgba(40, 132, 115, 1)), color-stop(100 %, rgba(38, 124, 128, 1)));
     background: url(../imgs/vision2.png) 16px / 30% no-repeat, linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);, -webkit-linear-gradient(left, rgba(40, 132, 115, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
@@ -1343,26 +1340,10 @@ p {
     top: 20px;
 }
 
-#video-background {
-    /*  making the video fullscreen  */
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    display: block;
+.link-to-calc{
+    cursor: pointer;
 }
 
-body.maalemtext{
-    z-index: 2;
-}
-
-.xl-large.text-center{
-    text-align:center !important;
-}
 
 @media screen and (max-width: 480px) {
     .navbar-default {

@@ -130,6 +130,9 @@ $(document).ready(function () {
     $(document).on('click', '.btn2', function () {
         $.fn.backgrounddestroyaddvideo();
     });
+    $(document).on('click', '.link-to-calc', function () {
+        window.location.href='calc.html';
+    });
     //$('.btn1').click($.fn.backgrounddestroy());
     //$('.btn2').click($.fn.backgrounddestroyaddvideo());
 
