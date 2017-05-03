@@ -1351,7 +1351,6 @@ body.maalemtext{
     z-index:2;
 }
 
-
 @media screen and (max-width: 480px) {
     .navbar-default {
         margin-bottom: 0 !important;
@@ -1621,6 +1620,9 @@ body.maalemtext{
 
     .second-nav.smallfont {
         font-size: 17px !important;
+    }
+    .requestform.text-center{
+        text-align:start;
     }
 }
 
