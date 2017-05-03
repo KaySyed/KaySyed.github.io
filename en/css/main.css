@@ -1680,6 +1680,10 @@ body.maalemtext{
         font-size: 40px;
     }
 
+    .requestform.text-center {
+        text-align: start;
+    }
+
     .home .backanimate, .home .translucentback {
         height: auto;
     }
