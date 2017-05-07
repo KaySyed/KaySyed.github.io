@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>معالم - حاسبة التمويل
-
-    </title>
+    <title>معالم - من نحن</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstraprtl.css" rel="stylesheet">
@@ -27,22 +25,6 @@
     <script type='text/javascript' src='js/camera.min.js'></script>
 
     <script>
-        /*jQuery(function () {
-         jQuery('#camera_wrap_1').each(function () {
-         var t = jQuery(this);
-         var s = 0;
-         t.camera({
-         height: '30%',
-         opacityOnGrid: true,
-         thumbnails: true,
-         fx: 'mosaicSpiral',
-         slideOn: 'next',
-         rows: 5,
-         cols: 8,
-         width: '100%'
-         });
-         });
-         });*/
     </script>
     <!--Close Camera master-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,7 +33,6 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="css/bootstrap-slider.css">
 </head>
 <body class="maalemtext">
 <div style="position: fixed;">
@@ -63,16 +44,18 @@
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
+
+
             <img src="imgs/logo-rtl_2.png" class="img-responsive center-block"/>
+
 
             <li class="text-center">
                 <a class="arBold smallfont" href="index.html">الرئيسية</a>
             </li>
-            <li class="text-center dropdown">
-                <a class="arBold smallfont dropdown-toggle divrtl" href="#" data-toggle="dropdown">من نحن <span
-                        class="caret"></span></a>
+            <li class="active text-center dropdown">
+                <a class="arBold smallfont dropdown-toggle" href="#" data-toggle="dropdown">من نحن <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a class="arBold smallfont" href="chairman.html">كلمة رئيس</a></li>
+                    <li class="active"><a class="arBold smallfont" href="chairman.html">كلمة رئيس</a></li>
                     <li><a class="arBold smallfont" href="goals.html">أهدافنا</a></li>
                     <li><a class="arBold smallfont" href="vision.html">رؤيتنا</a></li>
                     <li><a class="arBold smallfont" href="message.html">رسالتنا</a></li>
@@ -80,7 +63,7 @@
                     </a></li>
                 </ul>
             </li>
-            <li class="active text-center">
+            <li class="text-center">
                 <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
             </li>
             <li class="text-center">
@@ -89,7 +72,7 @@
             <li class="text-center">
                 <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
             </li>
-            <!--<li class="dropdown">
+            <!--<li class="text-center dropdown">
                 <a class="arBold smallfont" href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">Dropdown heading</li>
@@ -120,8 +103,6 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-
-
     <div class="navbar navbar-default second-nav smallfont home-page">
         <div class="second-nav-background">
             <div class="hamburger" data-toggle="offcanvas">
@@ -135,7 +116,7 @@
             </div>
             <a href="index.html"> <img class="nav-logo pull-left" src="imgs/logo-rtl_2.png"></a>
 
-            <div class="langAlignRight"><a href="en/calc.html">ENGLISH</a></div>
+            <div class="langAlignRight"><a href="en/chairman.html">ENGLISH</a></div>
             <div class="socialnav">
                 <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
@@ -168,7 +149,7 @@
 
                     <a href="index.html"><img class="nav-logo pull-left turn-white-logo" src="imgs/logo-rtl_2.png"></a>
 
-                    <div class="langAlignRight"><a href="en/calc.html">ENGLISH</a></div>
+                    <div class="langAlignRight"><a href="en/chairman.html">ENGLISH</a></div>
                     <div class="socialnav">
                         <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
@@ -186,62 +167,32 @@
                 <div class="btn-group-justified text-center" style="position: fixed;top:70px; z-index:9999999;"><button class="btn btn-primary btn1">1</button><button class="btn btn-primary btn2">2</button> </div>
 
                 <div class="container divrtl paddingbottom">
-
-                    <p class="page-heading">حاسبة التمويل:</p>
                     <div class="aboutus-item-header">
+                        <p class="no-margin xl-large text-left"> مجلس الادارة
 
-                        <p class="no-margin xl-large text-center" style="    font-family: abadi_mt_condensed_lightRg;">
-Coming Soon                        </p>
+                        </p>
+                        <!--<p class="no-margin large-aboutus text-left">مجلس الادارة
+
+                        </p>-->
                     </div>
-                    <div class="calcdiv" style="display:none">
-                        <div class="form-group -animated -overlayed">
-                            <p class="medium">
-                                الراتب: <span class="salamtmargin" id="ex6SliderVal">6000</span><span
-                                    class="riyalmargin">ريال</span>
-                            </p>
 
-                            <input id="ex10" type="text" data-slider-min="6000" data-slider-tooltip="hide"
-                                   data-slider-max="50000" data-slider-step="250" data-slider-value="6000"
-                                   data-slider-handle="custom"/></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:red"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:yellow"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:green"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:blue"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:red"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:yellow"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:green"><p></p></div>
+                        <div class="col-md-3 col-sm-2 col-xs-2" style="background:blue"><p></p></div>
 
-                        <div class="form-group -animated -overlayed">
-                            <label class="arform">مدة التمويل:</label>
-                            <input class="form-control" id="duration" type="text">
-                            <p>أشهر</p>
-                        </div>
-
-
-                        <div class="form-group -animated -overlayed">
-                            <p class="medium">
-                                العمر: <span class="salamtmargin" id="ex11SliderVal">18</span><span
-                                    class="riyalmargin">سنة</span>
-                            </p>
-
-                            <input id="ex11" type="text" data-slider-min="18" data-slider-tooltip="hide"
-                                   data-slider-max="100" data-slider-step="1" data-slider-value="18"
-                                   data-slider-handle="custom"
-                            /></div>
-
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <div class="calcres">
-                                    <span>= </span>000000
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <button class="calcresbtn">امسح</button>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
 
+<!-- /#page-content-wrapper -->
 <footer class="footer">
     <div class="socialfooter">
         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -266,7 +217,7 @@ Coming Soon                        </p>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>
-<script src="js/bootstrap-slider.min.js"></script>
+
 
 <script>var xyzxyz=0;</script>
 <script src="js/site.js"></script>

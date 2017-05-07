@@ -11,11 +11,20 @@ html {
     background: #eee;
     */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
     background-position: left;
     background-size: contain;
-    background-image: url(../imgs/Maalem-Financing-website.png);
-    /*
+    background: rgba(36, 118, 137, 1);
+    background: -moz-linear-gradient(-45deg, rgba(36, 118, 137, 1) 0%, rgba(41, 146, 85, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(36, 118, 137, 1)), color-stop(100%, rgba(41, 146, 85, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(36, 118, 137, 1) 0%, rgba(41, 146, 85, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(36, 118, 137, 1) 0%, rgba(41, 146, 85, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(36, 118, 137, 1) 0%, rgba(41, 146, 85, 1) 100%);
+    background: linear-gradient(135deg, rgba(36, 118, 137, 1) 0%, rgba(41, 146, 85, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#247689', endColorstr='#299255', GradientType=1);
+    background-attachment: fixed;
+    /*background-image: url(../imgs/Maalem-Financing-website.png);
+
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(214, 214, 214, 0.6) 100%), url(../imgs/Maalem-Financing-website.png);
     */
 
@@ -89,7 +98,7 @@ html {
 }
 
 .hamburger-box .fa {
-    width: 80px;
+    width: 86px;
 }
 
 .langAlignLeft {
@@ -690,7 +699,7 @@ label {
     margin-right: 30px;
     margin-left: 30px;
     border: 1px solid #fff;
-    padding: 0px 30px 0 30px;
+    padding: 0px 10px 0 10px;
     -webkit-transition: all ease-in-out 0.3s;
     -moz-transition: all ease-in-out 0.3s;
     -ms-transition: all ease-in-out 0.3s;
@@ -953,8 +962,12 @@ p {
     min-height: 90vh;
 }
 
+.translucentback .translucentback{
+    background: rgba(0, 0, 0, 0.05);
+}
+
 .translucentback2 {
-    background: rgba(0, 0, 0, 0.40);
+    background: rgba(0, 0, 0, 0.20);
     flex: 1;
     position: relative;
 }
@@ -1077,7 +1090,7 @@ p {
 }
 
 .footer {
-    background: linear-gradient(to left, rgba(34, 118, 139, 0.9) 0%, rgba(43, 139, 103, 0.9) 100%);
+    background: #005f61;
     text-align: center;
     color: #fff !important;
     padding: 10px 0px;
@@ -1230,10 +1243,10 @@ p {
 }
 
 .aboutus-item-header {
-    background: rgba(42, 141, 100, 1);
-    /*
+    /*background: rgba(42, 141, 100, 1);
+    !*
     background-image: url(../imgs/message.png) 16px / 30% no-repeat;
-    */
+    *!
     background: linear-gradient(to right, rgba(40, 132, 115, 1) 0%, rgba(38, 124, 128, 1) 100%);
 -moz-linear-gradient(left, rgba(42, 141, 100, 1) 0 %, rgba(38, 124, 128, 1) 100 %);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42, 141, 100, 1)), color-stop(100%, rgba(38, 124, 128, 1)));
@@ -1241,9 +1254,14 @@ p {
     background: -o-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     background: -ms-linear-gradient(left, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
     background: linear-gradient(to right, rgba(42, 141, 100, 1) 0%, rgba(38, 124, 128, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8d64', endColorstr='#267c80', GradientType=1);*/
+    background:white;
     padding: 0 15px;
     margin: 30px 0;
+}
+
+.aboutus-item-header p{
+    color: #005f61;
 }
 
 .structure-img {
@@ -1310,7 +1328,7 @@ p {
     content: '';
     height: .4em;
     width: .4em;
-    background: #1c6e2a;
+    background: #4eff6c;
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -1323,7 +1341,6 @@ p {
     right: 10px;
     top: 20px;
 }
-
 
 #video-background {
     /*  making the video fullscreen  */
@@ -1338,25 +1355,29 @@ p {
     display: block;
 }
 
-body.maalemtext{
+body.maalemtext {
     z-index: 2;
 }
 
-.xl-large.text-center{
-    text-align:center !important;
+.xl-large.text-center {
+    text-align: center !important;
 }
 
-.more-link{
+.more-link {
     cursor: pointer;
 }
 
-.link-to-calc{
+.link-to-calc {
     cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
     .navbar-default {
         margin-bottom: 0 !important;
+    }
+
+    .hamburger-box .fa {
+        width: 45px;
     }
 
     .langAlignRight {
@@ -1585,9 +1606,10 @@ body.maalemtext{
         margin: 0 !important;
     }
 
-    .newsitem button{
+    .newsitem button {
         float: none;
     }
+
     .main-logo {
         height: 81px;
     }

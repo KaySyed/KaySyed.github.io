@@ -23,6 +23,10 @@ if (hamburgers.length > 0) {
     });
 }
 
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 $(document).ready(function () {
     var trigger = $('.hamburger'),
         overlay = $('.overlay'),
@@ -76,28 +80,11 @@ $(document).ready(function () {
 
     $.fn.backgrounddestroy = function(){
        $(".fullBackground").bgswitcher("destroy");
-       $(".maalemtext, .backanimate p, .backanimate a,.translucentback .navbar-default .fa, .newsitem p, .form-group.-animated label, .maalemlist li").css('color','#005f61');
-       $(".borderWhite, .imagetextdiv").css('border-color','#005f61');
-       $(".translucentback .translucentback").css('background', 'rgba(0,0,0,0)');
-       $(".translucentback2").css('background', 'rgba(0,0,0,0.2)');
-       $(".btn-primary.outline").css('color','#005f61').css('border-color','#005f61');
        $("#video-background").css('display', 'none');
-       $(".moreitem:nth-of-type(2n+1), .moreitem:nth-of-type(2n)").css('border-bottom-color', '#005f61');
-
-       $(".btn-primary.outline").mouseover(function() {
-           $(this).css("color","white");
-       }).mouseout(function() {
-           $(this).css("color","#005f61");
-       });
-       $(".aboutus-item-header p, .second-nav .maalemtext, p.internal-heading").css('color','#fff');
-       $(".diamond-btn").attr("src","imgs/more-grn.png");
-       $(".turn-white-logo").attr("src","imgs/logo-rtl.png");
-       $(".stocks").attr("src","imgs/stocks-grn.png");
-       $(".car").attr("src","imgs/car-grn.png");
-       $(".bankbottle").attr("src","imgs/bankbottle-grn.png");
-       $(".form-control").attr("style", 'border-color: #005f61 !important');
+       //$(".translucentback .translucentback").css('background', 'rgba(0,0,0,0)');
+       //$(".translucentback2").css('background', 'rgba(0,0,0,0.2)');
     }
-    //$.fn.backgrounddestroy();
+    $.fn.backgrounddestroy();
     $.fn.backgrounddestroyaddvideo = function(){
         $(".fullBackground").bgswitcher("destroy");
         $(".fullBackground").bgswitcher("destroy");
