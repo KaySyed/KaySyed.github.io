@@ -1381,22 +1381,34 @@ body.maalemtext{
     width:80%;
 }
 
+.boardmember button{
+    width:100%;
+}
+
 .boardmember p{
     position: relative;
     padding:5px;
     background: #fff;
     color: #005f61;
-
+    height:150px;
+    overflow:hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-transition: height 0.2s ease-in-out;
+    -moz-transition: height 0.2s ease-in-out;
+    -ms-transition: height 0.2s ease-in-out;
+    -o-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
 }
+
 .boardmembertext:before{
     content: "";
     position: absolute;
     top: -10px;
     left:50%;
-    margin-left:-10px;
+    margin-left: -10px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-
     border-bottom: 10px solid white;
 }
 
@@ -1579,6 +1591,12 @@ body.maalemtext{
 
     .second-nav {
         line-height: 2;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .boardmember img {
+        width: 50%;
     }
 }
 
