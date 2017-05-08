@@ -1851,5 +1851,9 @@ body.maalemtext {
         background-size: contain;
         background-attachment: fixed;
     }
+
+    .requestcalc{
+        margin-bottom:10px;
+    }
 }
 
