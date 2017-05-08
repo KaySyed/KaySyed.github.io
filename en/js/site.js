@@ -79,14 +79,23 @@ $(document).ready(function () {
     });
 
     $.fn.backgrounddestroy = function(){
-       $(".fullBackground").bgswitcher("destroy");
-       $("#video-background").css('display', 'none');
+        $(".fullBackground").bgswitcher("destroy");$("#video-background").css('display', 'none');
+        $(".translucentback").css('background', 'rgba(0,0,0,0)');
+        $(".translucentback .translucentback").css('background', 'rgba(0,0,0,0.10)');
+        $(".translucentback2").css('background', 'rgba(0,0,0,0.2)');
+        /*$(".fullBackground").bgswitcher("destroy");
+        $("#video-background").css('display', 'none');*/
        //$(".translucentback .translucentback").css('background', 'rgba(0,0,0,0)');
        //$(".translucentback2").css('background', 'rgba(0,0,0,0.2)');
     }
     $.fn.backgrounddestroy();
     $.fn.backgrounddestroyaddvideo = function(){
-        $(".fullBackground").bgswitcher("destroy");
+        $(".fullBackground").bgswitcher("destroy");$("#video-background").css('display', 'block');
+        $("#wrapper").css('background','rgba(0, 0, 0, 0.40)');
+        $(".translucentback").css('background', 'rgba(0,0,0,0)');
+        $(".translucentback .translucentback").css('background', 'rgba(0,0,0,0.10)');
+        $(".translucentback2").css('background', 'rgba(0,0,0,0.2)');
+        /*$(".fullBackground").bgswitcher("destroy");
         $(".fullBackground").bgswitcher("destroy");
         $(".maalemtext, .backanimate p, .backanimate a,.translucentback .navbar-default .fa, .newsitem p,  .form-group.-animated label, .maalemlist li").css('color','#fff');
         $(".borderWhite, .imagetextdiv").css('border-color','#fff');
@@ -108,9 +117,9 @@ $(document).ready(function () {
         $(".car").attr("src","imgs/car.png");
         $(".bankbottle").attr("src","imgs/bankbottle.png");
         $(".form-control").attr("style", 'border-color: #fff !important');
-        $(".requestrow p").css('color', '#005f61');
-
+        $(".requestrow p").css('color', '#005f61');*/
     };
+    //$.fn.backgrounddestroyaddvideo()
     $(document).on('click', '.btn1', function () {
         $.fn.backgrounddestroy();;
     });
@@ -167,7 +176,3 @@ var isMobile = {
     }
 };
 
-if(isMobile.any()) {
-    $(".btn2").css('display','none');
-    $("#video-background").css('display','none');
-}
