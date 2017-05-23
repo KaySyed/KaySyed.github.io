@@ -5,36 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>معالم - الرئيسية</title>
+    <title>جامعة الامام محمد بن سعود الاسلامي - كلية علوم الحاسب والمعلومات</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstraprtl.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebarhamburger.css">
-    <link rel="stylesheet" href="css/hamburgers.css">
-
-
-    <link rel="stylesheet" href="css/scrolling-nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .backanimate {
-            overflow: hidden;
-            /*
-                        background-image: url(imgs/Maalem-Financing-website.png);
-            */
-            -webkit-transition: background-image 3s ease-in-out;
-            -moz-transition: background-image 3s ease-in-out;
-            -o-transition: background-image 3s ease-in-out;
-            -ms-transition: background-image 3s ease-in-out;
-            transition: background-image 3s ease-in-out;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
-            background-position: left center !important;
-        }
-
-    </style>
-    <link rel="stylesheet" href="css/bootstrap-social.css">
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,421 +20,218 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="maalemtext home">
+<body>
+<nav class="navbar navbar-default">
+    <div class="whiteborder">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://imamu.edu.sa"><img alt="Brand" class="img-responsive"
+                                                                         src="imgs/header-logo.png"></a>
+            </div>
 
-<div style="position: fixed;">
-    <div class="fullBackground"></div>
-</div>
-<div id="wrapper">
-    <div class="overlay"></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
+                <ul class="nav navbar-nav navbar-right social">
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 
-            <img src="imgs/logo-rtl_2.png" class="img-responsive center-block"/>
-
-            <li class="active text-center">
-                <a class="arBold smallfont" href="index.html">الرئيسية</a>
-            </li>
-            <li class="text-center dropdown">
-                <a class="arBold smallfont dropdown-toggle divrtl" href="#" data-toggle="dropdown">من نحن <span
-                        class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a class="arBold smallfont" href="chairman.html">كلمة رئيس</a></li>
-                    <li><a class="arBold smallfont" href="goals.html">أهدافنا</a></li>
-                    <li><a class="arBold smallfont" href="vision.html">رؤيتنا</a></li>
-                    <li><a class="arBold smallfont" href="message.html">رسالتنا</a></li>
-                    <li><a class="arBold smallfont" href="structure.html">الهيكل الإداري
-                    </a></li>
-                    <li><a class="arBold smallfont" href="board.html">مجلس الادارة
-                    </a></li>
                 </ul>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="calc.html">حاسبة التمويل</a>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="4.html">تمويل الافراد</a>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="3.html">تمويل الشركات والمؤسسات</a>
-            </li>
-            <!--<li class="dropdown">
-                <a class="arBold smallfont" href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a class="arBold smallfont" href="#">Action</a></li>
-                    <li><a class="arBold smallfont" href="#">Another action</a></li>
-                    <li><a class="arBold smallfont" href="#">Something else here</a></li>
-                    <li><a class="arBold smallfont" href="#">Separated link</a></li>
-                    <li><a class="arBold smallfont" href="#">One more separated link</a></li>
-                </ul>
-            </li>-->
-            <li class="text-center">
-                <a class="arBold smallfont" href="3.html">تمويل مقدمي الخدمات</a>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="6.html">الأسئلة المتكررة</a>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="newsslider.html">أخبار التمويل</a>
-            </li>
-            <li class="text-center">
-                <a class="arBold smallfont" href="#">خدمة العملاء</a>
-            </li>
-
-        </ul>
-    </nav>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="navbar navbar-default second-nav smallfont home-page">
-            <div class="second-nav-background">
-                <div class="hamburger" data-toggle="offcanvas">
-                    <div class="hamburger-box">
-                        <div class="langAlignLeft">
-                            <div class="fa fa-bars fa-3">
-                                <div class="langAlignRightAr2 maalemtext">القائمة</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="index.html"> <img class="nav-logo pull-left" src="imgs/logo-rtl_2.png"></a>
-
-                <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
-                <div class="socialnav">
-                    <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
-                <a class="maalemtext langAlignRight xsremove" href="#"><p>اعرفنا اكثر</p></a>
-                <a class="maalemtext langAlignRight xsremove" href="#"><p>جديد معالم</p></a>
-            </div>
-        </div>
-
-        <div class="backanimate">
-            <div class="translucentback">
-                <div class="navbar navbar-default ">
-                    <div class="hamburger" data-toggle="offcanvas">
-                        <div class="hamburger-box">
-                            <div class="langAlignLeft">
-                                <div class="fa fa-bars fa-3">
-                                    <div class="langAlignRightAr2 maalemtext">القائمة</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="index.html"><img class="nav-logo pull-left turn-white-logo" src="imgs/logo-rtl_2.png"></a>
-
-                    <div class="langAlignRight"><a href="en/index.html">ENGLISH</a></div>
-                    <div class="socialnav">
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="langAlignRight"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="langAlignRight tel xsremove"><a href="tel:920016916">9200 16916</a></div>
-                    <a class="langAlignRight maalemtext xsremove" href="#"><p>اعرفنا اكثر</p></a>
-                    <a class="langAlignRight maalemtext xsremove" href="#"><p>جديد معالم</p></a>
-                </div>
-
-
-                <div class="intro-section">
-
-                    <div class="container divrtl">
-                        <div class="col-md-12">
-                            <img src="imgs/logo-rtl_2.png" class="img-responsive center-block main-logo turn-white-logo"/>
-                            <p class=" text-center"><strong>لكل مرحلة مطلب ولكل مطلب معالم</strong></p>
-                            <p class=" text-center">- تمويل متطابق مع مبادئ واحكام الشريعة الأسلامية -</p>
-                            <div class="borderWhite link-to-calc" data-toggle="tooltip" data-placement="bottom" title="Coming Soon">
-                                <p class="no-margin"><strong>حاسبة التمويل |</strong> قم بحساب
-                                    تمويلك الاًن
-
-                                    <i class="pull-right fa fa-calculator calculator xsremove"
-                                       aria-hidden="true"></i>
-
-
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="translucentback">
-                        <div class="translucentback">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4 ">
-                                        <div class="imagetextdiv" onclick="location.href='3.html'">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p class=" large">للنمو معالم</p>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <img class="box-logo stocks" src="imgs/stocks.png"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class=" smallfont alignmargin absolute-center"> هنا تتضح معالم للنمو لشركتك
-                                            أو
-                                            مؤسستك، بتمويل
-                                            يمكنك من التركيز
-                                            على
-
-                                            ما تتقن فعله، ماكمال مسيرة النجاح والاستثمار في الشغف بمبلغ تبدأ من 200,000
-                                            ريال
-                                            سعودي</p>
-
-                                    </div>
-
-                                    <div class="col-md-4 ">
-                                        <div class="imagetextdiv" onclick="location.href='4.html'">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p class=" large">للرفاهية معالم</p>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <img class="box-logo car" src="imgs/car.png"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class=" smallfont alignmargin absolute-center">هنا تتضح معالم للرفاهية، سواء
-                                            كنت
-                                            تحاجة الى سيارة
-                                            جديدة تبدا بها
-                                            مرحلة مختلفة في مسيرتك، أو أحهزة منزلية تناسب أسلوب حياتك بتمويل يبدأ من
-                                            40,000
-                                            الى
-                                            200,000
-                                            ريال
-                                            سعودي</p>
-
-                                    </div>
-
-                                    <div class="col-md-4 ">
-                                        <div class="imagetextdiv" onclick="location.href='3.html'">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p class=" large">للتيسير معالم</p>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <img class="box-logo bankbottle"
-                                                         src="imgs/bankbottle.png"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class=" smallfont alignmargin absolute-center">هنا تتضح معالم التيسير، حيث
-                                            نقوم
-                                            بتمويل عملائك
-                                            ونيسر لهم شراء
-                                            منتجاتك أو الخدمات التي تقدمها شركتك، عبر شراكة تضمن لهم الحصول على الخدمة
-                                            وتضمن
-                                            لك
-                                            عائد
-                                            الاستثمار</p>
-
-                                    </div>
-
-                                    <div class="text-center paddingbottom">
-                                        <a class=" page-scroll" href="#more">المزيد
-                                            <i class="fa fa-angle-double-down bounce page-scroll  downarrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="translucentback2">
-            <section id="more" class="more ">
-                <div class="container divrtl">
-                    <div class="moreitem">
-                        <p class="xl-large ">من نحن</p>
-                        <p class="text-center"> تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت
-                            في
-                            الربع من عام 2013،
-                            الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.</p>
-
-                        <div class="row">
-
-                            <div class="col-md-4 padding-left-right50">
-                                <div class="center-block  img-responsive text-center">
-                                    <img class="box-logo" src="imgs/kalimathraees.png"/>
-                                </div>
-                                <p class="no-margin large-aboutus text-center">كلمة رئيس
-
-                                </p>
-
-                                <p class="smallfont absolute-center text-center">اننا في شركة معالم للتمويل نــود وبكل
-                                    أمتنان أن نـــواكب
-                                    مســيرتكم لشراكة ناجحة ومستمرة ودائمة.
-
-
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
-                                        onclick="location.href='chairman.html'">المزيد
-                                </button>
-                            </div>
-
-                            <div class="col-md-4 padding-left-right50">
-                                <div class="center-block  img-responsive text-center">
-
-                                    <img class="box-logo" src="imgs/rooyatna.png"/>
-                                </div>
-                                <p class="no-margin large-aboutus text-center">رؤيتنا و رسالتنا
-
-                                </p>
-
-                                <p class="smallfont absolute-center text-center ">الاختيار المفضل في مجال التمويل
-                                    لعملائنا
-                                    في
-                                    المملكة العربية
-                                    السعودية وذلك حسب متطلبات مؤسسة النقد العربي السعودي .
-
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
-                                        onclick="location.href='vision.html'">المزيد
-                                </button>
-                            </div>
-
-                            <div class="col-md-4 padding-left-right50">
-                                <div class="center-block  img-responsive text-center">
-                                    <img class="box-logo" src="imgs/ehdafna.png">
-                                </div>
-                                <p class="no-margin large-aboutus text-center">اهدافنا</p>
-                                <p class="smallfont absolute-center text-center ">تحسين مركزنا لتقديم حلول تمويلية
-                                    لشرائح
-                                    الأفراد و المؤسسات
-                                    الصغيرة والمتوسطة و أن نكون الخيار الأول للعميل ضمن قطاع شركات التمويل
-
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-lg outline smallfont center-block btn-aboutus"
-                                        onclick="location.href='goals.html'">المزيد
-                                </button>
-                            </div>
-
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><a href="http://www.simah.com">
-                                <div class="imagetextdiv text-center partnerlogo">
-                                    <img class="box-logo" src="imgs/simah.png"/>
-                                </div>
-                            </a>
-                            </div>
-                            <div class="col-md-6"><a href="http://www.sama.gov.sa">
-                                <div class="imagetextdiv text-center partnerlogo">
-                                    <img class="box-logo" src="imgs/sama.png"/>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="moreitem">
-                        <p class="xl-large ">أخبار التمويل</p>
-
-                        <div class="newsitem"><img class="newsitemimage"
-                                                   src="imgs/background_3_subitem_vectorized.png"/>
-                            <p class="">
-
-                                أصدرت مؤسسة النقد العرتي السعودي اليوم ثمانية تراخيص لشركات وبنوك محلية لممارسة نشاط أو
-                                أكثر
-                                من انشطة التمويل في المملكة واوضح معالي محافظ المؤسسة الدكتور قهد المبارك في تصريح
-                                لوكالة
-
-                                الابناء السعودية واس ان التراخيص ال
-                                <button type="button"
-                                        class="btn btn-primary btn-lg outline smallfont center-block"
-                                        onclick="location.href='newsslider.html'">المزيد
-                                </button>
-                            </p>
-
-                        </div>
-                        <div class="text-center more-link" onclick="location.href='newsslider.html'">
-                            <img src="imgs/more.png" class="center-block img-responsive diamond-btn">
-                            <p>المزيد</p>
-                        </div>
-                    </div>
-
-                    <div class="moreitem">
-                        <p class="xl-large ">لماذا معالم</p>
-                        <p class="">
-                            تأسست شركة معالم للتمويل في عام 2009م كشركة ذات مؤولية محدودة، ثم تحولت في
-                            الربع من عام 2013،
-                            الى شركة مساهمة مقفلة برأس مال يصل الى (100,000,000) مئة مليون ريال سعودي.
-                        </p>
-
-                        <div class="text-center more-link" onclick="location.href='2.html'">
-                            <img src="imgs/more.png" class="center-block img-responsive diamond-btn">
-                            <p>المزيد</p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </section>
-        </div>
-        <footer class="footer">
-            <div class="socialfooter">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-            </div>
-            <div class="contact-us"><a href="mailto:info@maalem.com.sa">info@maalem.com.sa</a>
-                <p> &nbsp;| </p> <a href="tel:920016916">9200 16916</a></div>
-            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Maalem Financing, All Rights Reserved
-            </p>
-
-        </footer>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </div>
-    <!-- /#page-content-wrapper -->
+</nav>
+
+<div class="container">
+    <div class="col-xs-12 blue-header">
+        <div class="col-md-2 col-sm-2 hidden-xs"></div>
+        <div class="col-md-4 col-sm-4 col-xs-8">
+            <p class="text-center absolute-center">
+                كلية علوم الحاسب والمعلومات بجامعة الامام محمد بن سعود
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-4 books-div">
+            <img src="imgs/books.png" class="img-responsive center-block">
+        </div>
+    </div>
+    <div dir="rtl" class="description">
+        <p>
+            عن الملتفى:
+        </p>
+        <p>
+            ملتقى أكاديمي سنوي، يلفي الضوء على مشاريع تخرج طلاب وطالبات كلية علوم الحاسب، والاطلاع على الافكار
+            والابتكارات الجديدة من خلال عروض تقديمية وبحوث أكاديمية وطرح فرص تقنية تعالج مشكلة أو حاجة تهم المستثمرين
+            وكبرى الشركات. </p>
+    </div>
+
+
+    <div dir="rtl" class="row details">
+        <div class="row">
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-4 col-xs-6 telescope">رؤية الملتقي:</div>
+            <div class="col-sm-2 hidden-xs"></div>
+            <div class="col-sm-4 col-xs-6 bulb">أهداف الملتقي:</div>
+            <div class="col-sm-1 hidden-xs"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-4 col-xs-6 jigsaw">الجهات المنظمة</div>
+            <div class="col-sm-2 hidden-xs"></div>
+            <div class="col-sm-4 col-xs-6 trophy">جوائز الملتقي:</div>
+            <div class="col-sm-1 hidden-xs"></div>
+        </div>
+    </div>
+    <div class="row partner-div">
+        <div class="col-md-4 col-sm-4 hidden-xs"></div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+            <img class="center-block" src="imgs/kaylogo.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+            <img class="center-block" src="imgs/intellogo.png">
+        </div>
+        <div class="col-md-4 col-sm-4 hidden-xs"></div>
+    </div>
+
+    <div class="slick-slider">
+        <div><img src="imgs/gallery_1.png"></div>
+        <div><img src="imgs/gallery_2.png"></div>
+        <div><img src="imgs/gallery_3.png"></div>
+        <div><img src="imgs/gallery_1.png"></div>
+        <div><img src="imgs/gallery_2.png"></div>
+        <div><img src="imgs/gallery_3.png"></div>
+    </div>
+
+    <div dir="rtl" class="row toppers">
+        <div class="col-md-1 text-center">
+            الفائزون
+        </div>
+        <div class="col-md-11 text-center">
+            <div class="col-md-4">
+                <p>الملتقى الأول</p>
+                <img class="topper-img" src="imgs/avatar_1.png">
+            </div>
+            <div class="col-md-4">
+                <p>الملتقى الثاني</p>
+                <img class="topper-img" src="imgs/avatar_2.png">
+            </div>
+            <div class="col-md-4">
+                <p>الملتقى الثالث</p>
+                <img class="topper-img" src="imgs/avatar_uknown.png">
+            </div>
+        </div>
+    </div>
+
+    <footer class="partner-div text-center">
+        Copyright &copy; 2017 Kay Technology
+    </footer>
 
 </div>
 
-
-<video autoplay loop id="video-background" muted poster="imgs/capture.png">
-    <source src="video source here"
-            type="video/mp4">
-</video>
-<!-- /#wrapper -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.bgswitcher.js"></script>
-<script>var xyzxyz=1;</script>
-<script src="js/site.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slick-slider').slick({
+            infinite: true,
+            speed: 300,
+            autoPlay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+        });
+
+        $('.telescope').popover({
+            content: '<div class="popup">ان يصبح أقوى ملتقى تنافسي لمشاريع التخرج في المملكة العربية السعودية.</div>',
+            html: true,
+            placement: "bottom"
+        });
+
+        $('.bulb').popover({
+            content: '<div class="popup"><ul><li>خلق الوعي بأهمية مشاريع التخرج ودورها في تحقيق رؤية 2030.</li><li>ايرار دور الكلية في مجال تملية المجتمع من خلال الأمكار والمشاريع النوعية</li></ul> <div class="text-center"><i class="text-center fa fa-angle-down"></i></div>  </div>',
+            html: true,
+            placement: "bottom"
+        });
+        $('.jigsaw').popover({
+            content: '<div class="popup">ان يصبح أقوى ملتقى تنافسي لمشاريع التخرج في المملكة العربية السعودية.</div>',
+            html: true,
+            placement: "bottom"
+        });
+        $('.trophy').popover({
+            content: '<div class="popup">ان يصبح أقوى ملتقى تنافسي لمشاريع التخرج في المملكة العربية السعودية.</div>',
+            html: true,
+            placement: "bottom"
+        });
+
+        /*$(".add-axle-btn").click(function(){
+         $(".add-axle-btn").parent().parent().before( '<div class="row stats-follow-box-horizontal"><div class="col-md-4"><div class=""><p>النقاط الاضافية</p></div></div><div class="col-md-8"><div id="followbox13" class="progressbar-box"></div></div></div>' );
+         });*/
+        $(document).on('click', function (e) {
+            $('[data-toggle="popover"],[data-original-title], .telescope').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false  // fix for BS 3.3.6
+                }
+            });
+            $('[data-toggle="popover"],[data-original-title], .bulb').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false  // fix for BS 3.3.6
+                }
+            });
+            $('[data-toggle="popover"],[data-original-title], .trophy').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false  // fix for BS 3.3.6
+                }
+            });
+            $('[data-toggle="popover"],[data-original-title], .jigsaw').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false  // fix for BS 3.3.6
+                }
+            });
+
+        });
+    });
+</script>
 </body>
 </html>
