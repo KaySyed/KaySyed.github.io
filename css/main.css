@@ -1,0 +1,352 @@
+html,body{
+    background-color: #969696;
+    background-image: url("../imgs/footer.png");
+    background-position: 0% 95%;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    -webkit-background-size:75%;
+    background-size:75%;
+    font-family: GeFlow;
+    color: #fff;
+}
+
+@font-face {
+    font-family: GeFlow;
+    src: url(../fonts/ge_flow_regular-webfont.woff)
+}
+
+@font-face {
+    font-family: Abadi;
+    src: url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.woff)
+}
+
+@font-face {
+    font-family: 'abadi_mt_condensed_lightRg';
+    src: url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.eot);
+    src: url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.woff2) format('woff2'),
+    url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.woff) format('woff'),
+    url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.ttf) format('truetype'),
+    url(../fonts/ufonts.com_abadi-mt-condensed-light-webfont.svg#abadi_mt_condensed_lightRg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ge_flowregular';
+    src: url(../fonts/ge_flow_regular-webfont.eot);
+    src: url(../fonts/ge_flow_regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/ge_flow_regular-webfont.woff2) format('woff2'),
+    url(../fonts/ge_flow_regular-webfont.woff) format('woff'),
+    url(../fonts/ge_flow_regular-webfont.ttf) format('truetype'),
+    url(../fonts/ge_flow_regular-webfont.svg#ge_flowregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-default{
+    background-color: transparent;
+    border:none;
+    padding:5px 0;
+}
+
+.navbar .navbar-brand {
+    padding-top: 0px;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.social [class*="fa fa-"] {
+    border-radius: 30px;
+    color: #969696;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #0c3251;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fa-twitter:hover, .fa-linkedin:hover, .fa-facebook:hover {
+    color: #0c3251;
+    background-color: transparent;
+}
+
+.nav.social>li>a{
+    padding-right: 5px;
+    padding-left:5px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:none;
+}
+
+.whiteborder{
+    padding:3px 0;
+    border-top:2px solid #aaaaaa;
+    border-bottom:2px solid #aaaaaa;
+    background-image:url("../imgs/header.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.blue-header{
+    background-color: #0c3251;
+    background-image: url("../imgs/sidelogo.png");
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.blue-header p{
+    font-size:35px;
+    color: #42ade2;
+    margin:0;
+    max-width: 285px;
+}
+.books-div img{
+    padding:10px;
+}
+
+.description p, .toppers{
+    margin-top:5px;
+    margin-bottom:0;
+    color: #fff;
+    font-size:18px;
+}
+
+.partner-div{
+    margin: 10px 0;
+    background: #0c3251;
+    padding: 10px 0;
+    background-image: url(../imgs/middle_bar_bg.png);
+    background-position: 50%;
+    background-repeat: repeat-x;
+    /* -webkit-background-size: contain; */
+    /* background-size: contain; */
+}
+
+.details{
+    margin:20px 0;
+    font-size:35px;
+    color: #fff;
+}
+
+.telescope{
+    -webkit-border-radius:55px;
+    -moz-border-radius:55px;
+    border-radius:55px;
+    background: url("../imgs/telescope.png") no-repeat 5px center, linear-gradient(45deg, #888889 0%, #888889 100%) repeat scroll 0% 0%;
+}
+
+.bulb{
+    -webkit-border-radius:55px;
+    -moz-border-radius:55px;
+    border-radius:55px;
+    background: url("../imgs/bulb.png") no-repeat 5px center, linear-gradient(45deg, #888889 0%, #888889 100%) repeat scroll 0% 0%;
+}
+
+.jigsaw{
+    -webkit-border-radius:55px;
+    -moz-border-radius:55px;
+    border-radius:55px;
+    background: url("../imgs/jigsaw.png") no-repeat 5px center, linear-gradient(45deg, #888889 0%, #888889 100%) repeat scroll 0% 0%;
+}
+
+.trophy{
+    -webkit-border-radius:55px;
+    -moz-border-radius:55px;
+    border-radius:55px;
+    background: url("../imgs/trophy.png") no-repeat 5px center, linear-gradient(45deg, #888889 0%, #888889 100%) repeat scroll 0% 0%;
+}
+
+.row.details> .row:nth-child(2){
+    padding-top:10px;
+}
+
+.row.details> .row>div{
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: right;
+    padding-right:30px;
+    cursor: pointer;
+}
+
+.slick-slide{
+    padding:10px;
+    margin:10px;
+}
+
+.slick-slider{
+    padding:15px;
+    background:#0c3251;
+}
+
+footer  {
+    color: #fff;
+    font-weight: bold;
+    font-family: Abadi;
+}
+
+.topper-img{
+    border: 2px solid white;
+    border-radius: 1001px;
+}
+
+.toppers p{
+    display: inline-block;
+    border: 2px solid;
+    padding: 0 15px;
+    border-radius: 1001px;
+}
+
+.popover.bottom>.arrow{
+    display: none;
+}
+
+.popover.bottom{
+    margin-top:0;
+}
+
+.row.details> .row>div.popover{
+    border-radius:0;
+    border:none;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: #656565;
+    padding:0 10px;
+    color: #fff;
+    font-family: inherit;
+}
+
+.popover ul{
+    padding-right:10px;
+    margin-bottom:5px;
+}
+
+.popover .fa-angle-down{
+    font-size:28px;
+    color:#888889;
+}
+
+@media screen and (max-width: 991px){
+    .blue-header p{
+        font-size:30px;
+    }
+    html,body{
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .details{
+        font-size:25px;
+    }
+    .telescope, .bulb, .jigsaw,.trophy {
+        background-size: 50px;
+    }
+    .row.details> .row>div.popover{
+        max-width:210px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blue-header p{
+        font-size:30px;
+    }
+    html,body{
+        -webkit-background-size:125%;
+        background-size:125%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .row.details> .row>div.popover{
+        max-width:310px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .row.details> .row>div.popover{
+        max-width:225px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .row.details> .row>div.popover{
+        max-width:200px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .row.details> .row>div.popover{
+        max-width:180px;
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .blue-header p{
+        font-size:23px;
+    }
+    html,body{
+        -webkit-background-size:157%;
+        background-size:157%;
+    }
+    .row.details> .row>div{
+        padding-right:15px;
+    }
+    .details {
+        font-size: 21px;
+    }
+    .telescope, .bulb, .jigsaw,.trophy {
+        background-size: 45px;
+    }
+    .row.details> .row>div.popover{
+        max-width:150px;
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .blue-header p{
+        font-size:18px;
+    }
+    .details {
+        font-size: 18px;
+    }
+    .telescope, .bulb, .jigsaw,.trophy {
+        background-size: 40px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .blue-header p{
+        font-size:15px;
+    }
+    html,body{
+        -webkit-background-size:220%;
+        background-size:220%;
+    }
+    .row.details> .row>div.popover{
+        padding:0;
+        max-width:130px;
+        font-size:11px;
+    }
+}
+
+

@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: transparent;
+}
+
+.crossfade > figure {
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.crossfade > figure:nth-child(1) {
+    animation: imageAnimation 48s 42s infinite;
+
+    background-image: url("../imgs/slider/1.jpg");
+}
+
+.crossfade > figure:nth-child(2) {
+
+    animation: imageAnimation 48s 36s infinite;
+
+    background-image: url('../imgs/slider/2.jpg');
+}
+
+.crossfade > figure:nth-child(3) {
+    animation: imageAnimation 48s 30s infinite;
+
+    background-image: url('../imgs/slider//3.jpg');
+}
+
+.crossfade > figure:nth-child(4) {
+    animation: imageAnimation 48s 24s infinite;
+
+    background-image: url('../imgs/slider/4.jpg');
+}
+
+.crossfade > figure:nth-child(5) {
+    animation: imageAnimation 48s 18s infinite;
+
+    background-image: url('../imgs/slider/5.jpg');
+}
+
+.crossfade > figure:nth-child(6) {
+    animation: imageAnimation 48s 12s infinite;
+
+    background-image: url('../imgs/slider/6.jpg');
+}
+
+.crossfade > figure:nth-child(7) {
+    animation: imageAnimation 48s 6s infinite;
+    background-image: url('../imgs/slider/7.jpg');
+}
+
+.crossfade > figure:nth-child(8) {
+    animation: imageAnimation 48s 0s infinite;
+    background-image: url('../imgs/slider/8.jpg');
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+    }
+    10.5% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
