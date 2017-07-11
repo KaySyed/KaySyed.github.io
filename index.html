@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+    <meta name="viewport"
+          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -25,7 +26,7 @@
 <audio loop autoplay>
     <source src="aud/launch.mp3" type="audio/mp3">
 </audio>
-<video autoplay loop id="video" muted plays-inline style="width:100%;">
+<video autoplay loop id="video" muted plays-inline style="width:100%; z-index: 0;">
     <!--<source src="vid/launch.mp4" type="video/mp4">-->
 </video>
 <div>
@@ -34,13 +35,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/screenfull.js"></script>
+
 <script>
-    var btn = 0;
-    $(function(){
-        document.body.requestFullscreen();
+    var btn = 2;
+
+    $(function () {
+
     });
     $('body').on('click', 'video', function () {
         if (btn === 0) {
+            screenfull.request();
             video.pause();
             video.removeAttribute('loop');
             source.setAttribute('src', 'vid/btn.mp4');
@@ -52,7 +57,7 @@
     $('body').on('click', 'div', function () {
         if (btn === 1) {
             window.location.href = 'http://www.google.com';
-        } else {
+        } else if (btn === 0) {
             {
                 video.pause();
                 video.removeAttribute('loop');
@@ -61,6 +66,10 @@
                 video.play();
                 btn = 1;
             }
+        }
+        if (btn === 2) {
+            screenfull.request();
+            btn = 0;
         }
     });
     var video = document.getElementById('video');
