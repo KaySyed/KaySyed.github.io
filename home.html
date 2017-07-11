@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>بدع- جامله الامام</title>
 
@@ -22,7 +25,7 @@
 <audio loop autoplay>
     <source src="aud/launch.wav" type="audio/ogg">
 </audio>
-<video autoplay loop id="video" muted plays-inline style="height: 100%; width:100%">
+<video autoplay loop id="video" muted plays-inline>
     <!--<source src="vid/launch.mp4" type="video/mp4">-->
 </video>
 <div>
@@ -33,6 +36,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     var btn = 0;
+    $(function(){
+        document.body.requestFullscreen();
+    });
     $('body').on('click', 'video', function () {
         if (btn === 0) {
             video.pause();
