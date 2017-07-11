@@ -40,9 +40,6 @@
 <script>
     var btn = 2;
 
-    $(function () {
-
-    });
     $('body').on('click', 'video', function () {
         if (btn === 0) {
             screenfull.request();
@@ -55,6 +52,36 @@
         }
     });
     $('body').on('click', 'div', function () {
+        if (btn === 1) {
+            window.location.href = 'http://www.google.com';
+        } else if (btn === 0) {
+            {
+                video.pause();
+                video.removeAttribute('loop');
+                source.setAttribute('src', 'vid/btn.mp4');
+                video.load();
+                video.play();
+                btn = 1;
+            }
+        }
+        if (btn === 2) {
+            screenfull.request();
+            btn = 0;
+        }
+    });
+
+    $('body').on('touchstart', 'video', function () {
+        if (btn === 0) {
+            screenfull.request();
+            video.pause();
+            video.removeAttribute('loop');
+            source.setAttribute('src', 'vid/btn.mp4');
+            video.load();
+            video.play();
+            btn = 1;
+        }
+    });
+    $('body').on('touchstart', 'div', function () {
         if (btn === 1) {
             window.location.href = 'http://www.google.com';
         } else if (btn === 0) {
