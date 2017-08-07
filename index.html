@@ -23,10 +23,10 @@
     <![endif]-->
 </head>
 <body>
-<audio loop autoplay>
+<audio loop>
     <source src="aud/launch.mp3" type="audio/mp3">
 </audio>
-<video autoplay loop id="video" muted plays-inline style="width:100%; z-index: 0;">
+<video loop id="video" muted plays-inline style="width:100%; z-index: 0;">
     <!--<source src="vid/launch.mp4" type="video/mp4">-->
 </video>
 <div>
@@ -65,6 +65,7 @@
             }
         }
         if (btn === 2) {
+			video.play();
             screenfull.request();
             btn = 0;
         }
@@ -105,7 +106,7 @@
     source.setAttribute('src', 'vid/launch.mp4');
 
     video.appendChild(source);
-    video.play();
+    //video.play();
 
 </script>
 </body>
