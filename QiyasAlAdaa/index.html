@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>نظام قياس الأداء</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstraprtl.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/progressbar.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-default bar">
+</nav>
+<nav class="navbar navbar-default internal">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-left divrtl">
+            <li><img class="internal-header-logo" src="imgs/hadaflogo.png"/></li>
+            <li><img class="img-responsive internal-header-logo gif" src="imgs/logo1.gif"/></li>
+            <li><p class="center-block gradient-text internal-header-text">نظام قياس الأداء</p></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right divrtl profile">
+            <li>
+                <div class="profile-avatar-name">
+                    <img class="center-block img-circle avatar" src="imgs/avatar.png"/>
+                    <p class="medium blue name">محمد الحمد قاسم</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+        <div dir="rtl" class="slick-slider">
+
+            <div class=" text-center">
+                <p class="month-name">يناير 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">فبراير 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name"> 2017مارس</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">ابريل 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">مايو 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">يونيو 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">يوليو 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name active">أغسطس 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">سبتمبر 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">أكتوبر 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">نوفمبر 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">ديسمبر 2017</p>
+            </div>
+            <div class=" text-center">
+                <p class="month-name">يناير 2018</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="month-slider" style="display :none">
+        <div class="row month-names">
+            <div class="col-md-1 text-center">
+                <p class="month-name">يناير</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">فبراير</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">مارس</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">ابريل</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name active">مايو</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">يونيو</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">يوليو</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">أغسطس</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">سبتمبر</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">أكتوبر</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">نوفمبر</p>
+            </div>
+            <div class="col-md-1 text-center">
+                <p class="month-name">ديسمبر</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stats-box">
+                        <p class="text-center box-title">قائمة المتابعة</p>
+
+                        <p class="text-center box-text">قائمة المتابعة اداء المناطق</p>
+                        <div class="stats-follow-box">
+                            <div id="followbox1" class="progressbar-box">
+                            </div>
+                            <p>الأقليم الأوسط</p>
+                        </div>
+                        <div class="stats-follow-box">
+                            <div id="followbox2" class="progressbar-box">
+                            </div>
+                            <p>القطاع الشرقي
+                            </p>
+                        </div>
+                        <div class="stats-follow-box">
+                            <div id="followbox3" class="progressbar-box">
+                            </div>
+                            <p>القطاع الشمالي
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+
+                </div>
+            </div>
+            <div class="row divrtl statbox-cont">
+                <div class="col-md-12">
+                    <div class="stats-box stats-box-vertical">
+
+                        <div class="stats-follow-box">
+                            <div id="followbox4" class="progressbar-box">
+                            </div>
+                            <p>المتسوق السري
+
+                            </p>
+                        </div>
+                        <div class="stats-follow-box">
+                            <div id="followbox5" class="progressbar-box">
+                            </div>
+                            <p>صوت العميل
+
+                            </p>
+                        </div>
+                        <div class="stats-follow-box ">
+                            <div id="followbox6" class="progressbar-box">
+                            </div>
+                            <p>زيارات المراجعة التشغيلية
+
+                            </p>
+                        </div>
+                        <div class="stats-follow-box ">
+                            <div id="followbox7" class="progressbar-box">
+                            </div>
+                            <p>توظيف ذوي الاعاقة
+
+                            </p>
+                        </div>
+                        <div class="stats-follow-box">
+                            <div id="followbox8" class="progressbar-box">
+                            </div>
+                            <p>خفض البطالة
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 divrtl">
+                    <div class="stats-box axles">
+                        <p class="text-center box-title">اداء المحاور</p>
+
+                        <p class="text-center box-text">نسبة تحقيق اهداف المحاور</p>
+
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>القوى الوطنية
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox9" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>التعليم والنمو
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox10" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>العمليات الداخلية
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox11" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>العملاء
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox12" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>النقاط الاضافية
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox13" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <p class="add-axle-btn">+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 divrtl">
+                    <div class="stats-box axles">
+                        <p class="text-center box-title">اداء المحاور</p>
+
+                        <p class="text-center box-text">نسبة تحقيق اهداف المحاور</p>
+
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>القوى الوطنية
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox14" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>التعليم والنمو
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox15" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>العمليات الداخلية
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox16" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>العملاء
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox17" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-follow-box-horizontal">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <p>النقاط الاضافية
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div id="followbox18" class="progressbar-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <p class="add-axle-btn">+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row divrtl statbox-cont">
+                <div class="col-md-4">
+                    <div class="stats-box ">
+                        <p class="text-center box-title">عداد التوظيف
+                        </p>
+                        <div class="stats-follow-box">
+                            <div id="followbox19" class="progressbar-box small">
+                            </div>
+                            <p>الأقليم الأوسط</p>
+                        </div>
+                        <div class="stats-follow-box">
+                            <div id="followbox20" class="progressbar-box small">
+                            </div>
+                            <p>الأقليم الأوسط</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="stats-follow-box stats-box-large progressbar-box-large">
+                        <div id="followbox21" class="progressbar-box">
+                        </div>
+                        <p> نسبة الإنجاز العام</p>
+                    </div>
+                    <div class="col-md-12 last-update">
+                        <p class="text-center">اخر تحديث 3 - ابريل - 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer text-center">
+    <p>Copyright © 2017 Hadaf
+    </p>
+    <a href="#">Home</a><a href="#">Dashboard</a><a href="#">Reports</a><a href="#">Support</a><a href="#">Contact</a>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.custom-scrollbar.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+
+    var fb1value = 0.90;
+    var fb2value = 0.89;
+    var fb3value = 0.74;
+    var fb4value = 0.75;
+    var fb5value = 0.45;
+    var fb6value = 0.95;
+    var fb7value = 0.89;
+    var fb8value = 0.74;
+    var fb9value = 0.79;
+    var fb10value = 0.98;
+    var fb11value = 0.49;
+    var fb12value = 0.74;
+    var fb13value = 0.89;
+    var fb14value = 0.93;
+    var fb15value = 0.77;
+    var fb16value = 0.75;
+    var fb17value = 1.00;
+    var fb18value = 0.90;
+    var fb19value = 0.90;
+    var fb20value = 0.90;
+    var fb21value = 0.90;
+
+
+    var progressbars = [
+        [fb1value, "#followbox1", 'circle'],
+        [fb2value, "#followbox2", 'circle'],
+        [fb3value, "#followbox3", 'circle'],
+        [fb4value, "#followbox4", 'circle'],
+        [fb5value, "#followbox5", 'circle'],
+        [fb6value, "#followbox6", 'circle'],
+        [fb7value, "#followbox7", 'circle'],
+        [fb8value, "#followbox8", 'circle'],
+        [fb9value, "#followbox9", 'line'],
+        [fb10value, "#followbox10", 'line'],
+        [fb11value, "#followbox11", 'line'],
+        [fb12value, "#followbox12", 'line'],
+        [fb13value, "#followbox13", 'line'],
+        [fb14value, "#followbox14", 'line'],
+        [fb15value, "#followbox15", 'line'],
+        [fb16value, "#followbox16", 'line'],
+        [fb17value, "#followbox17", 'line'],
+        [fb18value, "#followbox18", 'line'],
+        [fb19value, "#followbox19", 'circle'],
+        [fb20value, "#followbox20", 'circle'],
+        [fb21value, "#followbox21", 'circle']
+    ];
+
+    var progressbarsforupdate =[];
+
+    $.fn.initialize = function() {
+        $.each(progressbars, function (index) {
+
+        var a = progressbars[index][0];
+        var b = progressbars[index][1];
+        var c = progressbars[index][2];
+
+        if (a >= 0.75 && a <= .89 && c === 'circle') {
+            $(b).parent(".stats-follow-box").addClass("yellow");
+        } else if (a > .89 && c === 'circle') {
+            $(b).parent(".stats-follow-box").addClass("green");
+        }
+        else if (c === 'circle') {
+            $(b).parent(".stats-follow-box").addClass("red");
+        }
+        if (a >= 0.75 && a <= .89 && c === 'line') {
+            $(b).parent(".col-md-8").parent().addClass("yellow");
+        } else if (a > .89 && c === 'line') {
+            $(b).parent(".col-md-8").parent().addClass("green");
+        }
+        else if (c === 'line') {
+            $(b).parent(".col-md-8").parent().addClass("red");
+        }
+
+        if (c === "circle") {
+            var x = new ProgressBar.Circle(b, {
+                color: '#fff',
+                // This has to be the same size as the maximum width to
+                // prevent clipping
+                strokeWidth: 6,
+                trailWidth: 1,
+                easing: 'easeInOut',
+                duration: 1400,
+                text: {
+                    autoStyleContainer: false
+                },
+                from: {color: '#fff', width: 6},
+                to: {color: '#fff', width: 6},
+                // Set default step function for all animate calls
+                step: function (state, circle) {
+                    circle.path.setAttribute('stroke', state.color);
+                    circle.path.setAttribute('stroke-width', state.width);
+
+                    var value = Math.round(circle.value() * 100) + ' %';
+                    if (value === 0) {
+                        circle.setText('');
+                    } else {
+                        circle.setText(value);
+                    }
+                }
+            });
+            x.animate(a);
+            progressbarsforupdate.push(x);
+        }
+        else if (c === "line") {
+            var x = new ProgressBar.Line(b, {
+                    strokeWidth: 6,
+                    easing: 'easeInOut',
+                    duration: 1400,
+                    color: '#fff',
+                    trailColor: '#eee',
+                    trailWidth: 1,
+                    svgStyle: {width: '100%', height: '100%'},
+                    text: {
+                        style: {
+                            // Text color.
+                            // Default: same as stroke color (options.color)
+                            color: '#fff',
+                            right: '0',
+                            top: '30px',
+                            padding: 0,
+                            margin: 0,
+                            transform: null
+                        },
+                        autoStyleContainer: false
+                    },
+                    from: {color: '#fff'},
+                    to: {color: '#fff'},
+                    step: function (state, bar) {
+                        bar.setText(Math.round((bar.value() * 100) * -1) + ' %');
+                    }
+                });
+            x.animate(a * -1);
+            progressbarsforupdate.push(x);
+        }
+    });
+    };
+
+    $( document ).ready(function() {
+        $.fn.initialize();
+    });
+
+    $.fn.update = function() {
+        $.each(progressbarsforupdate, function (index) {
+            progressbarsforupdate[index].animate(0.5);
+       })
+    };
+
+    $('.slick-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 12,
+        rtl: true,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    $('.profile').popover({
+        content: '<div class="popup divrtl"><p><a href="#"><i class="fa fa-arrows-alt"/>ملء الشاشة</a></p><p><a href="#"><i class="fa fa-cog"/>حسابي</a></p><p><a href="#"><i class="fa fa-user"/>اعدادات</a></p><p><a href="#"><i class="fa fa-power-off"/>تسجيل الخروج</a></p></div>',
+        html: true,
+        placement: "bottom"
+    });
+
+    /*$(".add-axle-btn").click(function(){
+     $(".add-axle-btn").parent().parent().before( '<div class="row stats-follow-box-horizontal"><div class="col-md-4"><div class=""><p>النقاط الاضافية</p></div></div><div class="col-md-8"><div id="followbox13" class="progressbar-box"></div></div></div>' );
+     });*/
+    $(document).on('click', function (e) {
+        $('[data-toggle="popover"],[data-original-title], .profile').each(function () {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false  // fix for BS 3.3.6
+            }
+        });
+    });
+</script>
+</html>
