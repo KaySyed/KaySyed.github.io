@@ -51,7 +51,7 @@
             <p class="text-center login-label button-type">تسجيل مستخدم جديد</p>
         </div>
         <div class="col-md-5 ">
-            <p class="text-center login-label button-type">دخول</p>
+            <p class="text-center login-label login button-type">دخول</p>
         </div>
     </div>
 
@@ -74,5 +74,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+$('.login-label.login').click(function(){
+    window.location.href('../2.html');
+});
+
 </body>
 </html>
